@@ -894,7 +894,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Which one do you choose? '
+  m_Text: Which one do you choose??
 --- !u!222 &1835645991
 CanvasRenderer:
   m_ObjectHideFlags: 0
