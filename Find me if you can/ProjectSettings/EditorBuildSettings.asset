@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TestYuliia/Option2.unity
     guid: 98a7fb5de88c9482eaa900df07ccd76c
+  - enabled: 1
+    path: Assets/Scenes/Meny.unity
+    guid: b111446e19a3c40198d2936aa527b800
+  - enabled: 1
+    path: Assets/Scenes/FirstChoices.unity
+    guid: a990543881fcc474795a1876975bda9c
   m_configObjects: {}
