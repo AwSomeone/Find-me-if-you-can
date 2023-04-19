@@ -12,6 +12,7 @@ public class Timer : MonoBehaviour
     public float gameTime = 10f;
     private Slider timerSlider;
     private bool stopTimer;
+    private float elapsedTime;
 
     void Start()
     {
@@ -25,23 +26,27 @@ public class Timer : MonoBehaviour
         stopTimer = false;
         timerSlider.maxValue = gameTime;
         timerSlider.value = gameTime;
+        elapsedTime = 0;
     }
 
     void Update()
     {
-        float time = gameTime - Time.time;
+        elapsedTime += Time.deltaTime;
 
-        int seconds = Mathf.FloorToInt(time / 60f);
-
-        if(time <= 0)
-        {
-            stopTimer = true;
-            gm.TimerEnded();
-        }
+        Debug.Log("Time: " + elapsedTime);
 
         if(stopTimer == false)
         {
-            timerSlider.value = time; 
+            timerSlider.value -= gameTime/elapsedTime; 
         }
+        if(elapsedTime >= gameTime)
+        {
+            elapsedTime = gameTime;
+
+            stopTimer = true;
+            gm.TimerEnded();
+            ResetTimer();
+        }
+
     }
 }

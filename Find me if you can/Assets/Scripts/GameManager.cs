@@ -16,6 +16,7 @@ public class GameManager : MonoBehaviour
         public VideoClip video;
         public float timeToThink;
         public Choice[] choice;
+        public bool timerOrNot;
 
         //Add a subtitle and voiceover variable?
     }
@@ -58,6 +59,8 @@ public class GameManager : MonoBehaviour
     //Starts Video
     private void StartSequence(int sequence)
     {
+        timer.ResetTimer();
+
         if(sequences[sequence] == null)
         {
             Debug.Log("Error: Sequence out of bounds of array.");
