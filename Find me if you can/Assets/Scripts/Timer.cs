@@ -6,6 +6,8 @@ using System;
 
 public class Timer : MonoBehaviour
 {
+    public GameManager gm;
+
     [NonSerialized]
     public float gameTime = 10f;
     private Slider timerSlider;
@@ -14,6 +16,12 @@ public class Timer : MonoBehaviour
     void Start()
     {
         timerSlider = gameObject.GetComponent<Slider>();
+        ResetTimer();
+    }
+
+    public void ResetTimer()
+    {
+        Debug.Log("Timer reset to" + gameTime);
         stopTimer = false;
         timerSlider.maxValue = gameTime;
         timerSlider.value = gameTime;
@@ -28,6 +36,7 @@ public class Timer : MonoBehaviour
         if(time <= 0)
         {
             stopTimer = true;
+            gm.TimerEnded();
         }
 
         if(stopTimer == false)

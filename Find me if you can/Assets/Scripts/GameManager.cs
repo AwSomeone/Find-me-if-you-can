@@ -8,13 +8,13 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    public Timer timer;
     [Serializable]
     public class StoryMap
     {
         [Space(10)]
         public VideoClip video;
         public float timeToThink;
-        public Timer timer;
         public Choice[] choice;
 
         //Add a subtitle and voiceover variable?
@@ -29,13 +29,13 @@ public class GameManager : MonoBehaviour
         public GameManager gameManagerScript;
         private Choice ()
         {
-            button.onClick.AddListener(ClickFunction);
+            //button.onClick.AddListener(ClickFunction);
         }
-        private void ClickFunction()
-        {
-            gameManagerScript.ToggleButtons(false);
-            gameManagerScript.StartSequence(leadsTo);
-        }
+    }
+    private void ClickFunction(int leadsTo)
+    {
+        ToggleButtons(false);
+        StartSequence(leadsTo);
     }
 
     public StoryMap[] sequences;
@@ -49,7 +49,7 @@ public class GameManager : MonoBehaviour
     {
         player = GetComponent<VideoPlayer>();
 
-        sequences[0].timer.gameTime = sequences[0].timeToThink; //Run this line every time the timer length needs to be set.
+        timer.gameTime = sequences[0].timeToThink; //Run this line every time the timer length needs to be set.
 
         StartSequence(0);
     }
@@ -63,8 +63,14 @@ public class GameManager : MonoBehaviour
             Debug.Log("Error: Sequence out of bounds of array.");
         }
         player.clip = sequences[sequence].video;
+        player.playbackSpeed = 1f;
         player.Play();
         player.loopPointReached += EndReached; //Pauses video at end point
+        //Assigns functions to buttonclicks
+        foreach (Choice choice in sequences[0].choice)
+        {
+            choice.button?.onClick.AddListener(() => ClickFunction(choice.leadsTo));
+        }
     }
 
     private void EndReached(VideoPlayer vp)
@@ -73,18 +79,30 @@ public class GameManager : MonoBehaviour
         NewChoice();
     }
 
-
     //Sets up choices when video ends
     private void NewChoice()
     {
+        timer.ResetTimer();
         ToggleButtons(true);
+
+        foreach (Choice choice in sequences[0].choice)
+        {
+            choice.button?.onClick.AddListener(() => ClickFunction(choice.leadsTo));
+        }
+
     }
 
     private void ToggleButtons(bool makeVisible)
     {
         foreach(Choice choice in sequences[currentSequence].choice)
         {
-            choice.button.gameObject.SetActive(true); //Brings up the choices on screen
+            choice.button.gameObject.SetActive(makeVisible); //Brings up the choices on screen
         }
+    }
+
+    public void TimerEnded()
+    {
+        Debug.Log("Timer ended");
+        StartSequence(sequences[currentSequence].choice[0].leadsTo);
     }
 }

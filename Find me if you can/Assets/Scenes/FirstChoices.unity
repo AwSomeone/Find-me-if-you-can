@@ -214,7 +214,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &471972475
 RectTransform:
   m_ObjectHideFlags: 0
@@ -444,7 +444,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Option1
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -544,7 +544,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1172862192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -706,7 +706,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Button
+  m_text: Option2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -916,10 +916,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4902c1f36ea16042a9f41fbe8a9f016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: {fileID: 1665694144}
   sequences:
-  - video: {fileID: 32900000, guid: cc0ee9c047e9c4c08b82c2d4a23112e6, type: 3}
+  - video: {fileID: 32900000, guid: 06851c6b586bab64086925743f74e2c7, type: 3}
     timeToThink: 10
-    timer: {fileID: 1665694144}
+    choice:
+    - leadsTo: 1
+      button: {fileID: 471972476}
+      gameManagerScript: {fileID: 1465555531}
+    - leadsTo: 2
+      button: {fileID: 1172862193}
+      gameManagerScript: {fileID: 1465555531}
+  - video: {fileID: 32900000, guid: 8d4bf6b1f0d76431a841bc7a10d8085e, type: 3}
+    timeToThink: 10
+    choice: []
+  - video: {fileID: 32900000, guid: f65aceb48fe6dc443b9a1d60a858c61c, type: 3}
+    timeToThink: 10
     choice: []
 --- !u!328 &1465555532
 VideoPlayer:
@@ -1277,6 +1289,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7252312016316941505, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252312016316941505, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252312016316941505, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1465555530}
+    - target: {fileID: 7252312016316941505, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252312016316941505, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: UnityEngine.GameObject, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 7252312016316941518, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1465555531}
     - target: {fileID: 7252312016316941519, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
       propertyPath: m_Name
       value: Timer
