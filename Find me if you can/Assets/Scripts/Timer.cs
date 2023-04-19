@@ -2,24 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
 
 public class Timer : MonoBehaviour
 {
-    public Slider timerSlider;
-    public float gameTime;
-
-
+    [NonSerialized]
+    public float gameTime = 10f;
+    private Slider timerSlider;
     private bool stopTimer;
-    // Start is called before the first frame update
+
     void Start()
     {
-
+        timerSlider = gameObject.GetComponent<Slider>();
         stopTimer = false;
         timerSlider.maxValue = gameTime;
         timerSlider.value = gameTime;
     }
 
-    // Update is called once per frame
     void Update()
     {
         float time = gameTime - Time.time;
@@ -35,9 +34,5 @@ public class Timer : MonoBehaviour
         {
             timerSlider.value = time; 
         }
-
-
     }
-
-
 }

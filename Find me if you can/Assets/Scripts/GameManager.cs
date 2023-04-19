@@ -14,9 +14,15 @@ public class GameManager : MonoBehaviour
         [Space(10)]
         public VideoClip video;
         public float timeToThink;
+        public Slider timer;
         public Choice[] choice;
 
-        //Add subtitle variable?
+        //Add a subtitle and voiceover variable?
+
+        public StoryMap()
+        {
+            timer.gameObject.GetComponent<Timer>().gameTime = timeToThink;
+        }
     }
 
     [Serializable]
