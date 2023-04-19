@@ -14,15 +14,10 @@ public class GameManager : MonoBehaviour
         [Space(10)]
         public VideoClip video;
         public float timeToThink;
-        public Slider timer;
+        public Timer timer;
         public Choice[] choice;
 
         //Add a subtitle and voiceover variable?
-
-        public StoryMap()
-        {
-            timer.gameObject.GetComponent<Timer>().gameTime = timeToThink;
-        }
     }
 
     [Serializable]
@@ -53,6 +48,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         player = GetComponent<VideoPlayer>();
+
+        sequences[0].timer.gameTime = sequences[0].timeToThink; //Run this line every time the timer length needs to be set.
+
         StartSequence(0);
     }
 
@@ -60,6 +58,10 @@ public class GameManager : MonoBehaviour
     //Starts Video
     private void StartSequence(int sequence)
     {
+        if(sequences[sequence] == null)
+        {
+            Debug.Log("Error: Sequence out of bounds of array.");
+        }
         player.clip = sequences[sequence].video;
         player.Play();
         player.loopPointReached += EndReached; //Pauses video at end point
