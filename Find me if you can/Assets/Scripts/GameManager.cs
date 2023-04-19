@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
     private void EndReached(VideoPlayer vp)
     {
         vp.playbackSpeed *= 0f;
+        NewChoice();
     }
 
 
