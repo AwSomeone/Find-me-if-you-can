@@ -83,10 +83,16 @@ public class GameManager : MonoBehaviour
         timer.ResetTimer();
         ToggleButtons(true);
 
-        foreach (Choice choice in sequences[currentSequence].choice)
+        for (int i = 0; i <= sequences[currentSequence].choice.Length - 1; i++)
         {
-            choice.button?.onClick.AddListener(() => ClickFunction(choice.leadsTo));
-        }
+            Debug.Log(i);
+            sequences[currentSequence].choice[i].button?.onClick.AddListener(() => ClickFunction(sequences[currentSequence].choice[i].leadsTo));
+
+        } /*
+            foreach (Choice choice in sequences[currentSequence].choice)
+        {
+        Debug.Log("Adding listener");
+        }*/
 
     }
 
@@ -96,7 +102,7 @@ public class GameManager : MonoBehaviour
         {
             for(int i = 0;i <= sequences[currentSequence].choice.Length - 1;i++)
             {
-                Debug.Log("Option: " + sequences[currentSequence].choice[i].button.gameObject.name);
+                //Debug.Log("Option: " + sequences[currentSequence].choice[i].button.gameObject.name);
 
                 sequences[currentSequence].choice[i].button.gameObject.SetActive(true);
             }
@@ -109,14 +115,6 @@ public class GameManager : MonoBehaviour
                 sequences[previousSequence].choice[i].button.gameObject.SetActive(false);    
             }
         }
-
-
-        /*
-        foreach(Choice choice in sequences[currentSequence].choice)
-        {
-            Debug.Log("Option: " + choice.button.gameObject.name);
-            choice.button.gameObject.SetActive(makeVisible); //Brings up the choices on screen
-        }*/
     }
 
     public void TimerEnded()
