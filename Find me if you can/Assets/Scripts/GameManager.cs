@@ -14,9 +14,7 @@ public class GameManager : MonoBehaviour
     {
         [Space(10)]
         public VideoClip video;
-        public float timeToThink;
         public Choice[] choice;
-        public bool timerOrNot;
 
         //Add a subtitle and voiceover variable?
     }
@@ -26,15 +24,12 @@ public class GameManager : MonoBehaviour
     {
         public int leadsTo; //Which sequence the button should start
         public Button button;
-
-        public GameManager gameManagerScript;
-        private Choice ()
-        {
-            //button.onClick.AddListener(ClickFunction);
-        }
     }
     private void ClickFunction(int leadsTo)
     {
+        Debug.Log("Button CLICKED");
+        previousSequence = currentSequence;
+        currentSequence = leadsTo;
         ToggleButtons(false);
         StartSequence(leadsTo);
     }
@@ -44,14 +39,13 @@ public class GameManager : MonoBehaviour
     //There you can put the video clips to be shown and link up buttons to make them start the next videos.
 
     private VideoPlayer player;
-    private int currentSequence;
+    private int currentSequence = 0;
+    private int previousSequence;
+
 
     void Start()
     {
         player = GetComponent<VideoPlayer>();
-
-        timer.gameTime = sequences[0].timeToThink; //Run this line every time the timer length needs to be set.
-
         StartSequence(0);
     }
 
@@ -59,6 +53,7 @@ public class GameManager : MonoBehaviour
     //Starts Video
     private void StartSequence(int sequence)
     {
+        Debug.Log("Adding clip");
         timer.ResetTimer();
 
         if(sequences[sequence] == null)
@@ -88,7 +83,7 @@ public class GameManager : MonoBehaviour
         timer.ResetTimer();
         ToggleButtons(true);
 
-        foreach (Choice choice in sequences[0].choice)
+        foreach (Choice choice in sequences[currentSequence].choice)
         {
             choice.button?.onClick.AddListener(() => ClickFunction(choice.leadsTo));
         }
@@ -97,10 +92,31 @@ public class GameManager : MonoBehaviour
 
     private void ToggleButtons(bool makeVisible)
     {
+        if(makeVisible)
+        {
+            for(int i = 0;i <= sequences[currentSequence].choice.Length - 1;i++)
+            {
+                Debug.Log("Option: " + sequences[currentSequence].choice[i].button.gameObject.name);
+
+                sequences[currentSequence].choice[i].button.gameObject.SetActive(true);
+            }
+        } else
+        {
+            for (int i = 0; i <= sequences[previousSequence].choice.Length - 1; i++)
+            {
+                //Debug.Log("Option: " + sequences[currentSequence].choice[i].button.gameObject.name);
+
+                sequences[previousSequence].choice[i].button.gameObject.SetActive(false);    
+            }
+        }
+
+
+        /*
         foreach(Choice choice in sequences[currentSequence].choice)
         {
+            Debug.Log("Option: " + choice.button.gameObject.name);
             choice.button.gameObject.SetActive(makeVisible); //Brings up the choices on screen
-        }
+        }*/
     }
 
     public void TimerEnded()

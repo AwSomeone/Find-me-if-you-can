@@ -10,7 +10,7 @@ public class Timer : MonoBehaviour
 
     [NonSerialized]
     public float gameTime = 10f;
-    private Slider timerSlider;
+    public Slider timerSlider;
     private bool stopTimer;
     private float elapsedTime;
 
@@ -22,7 +22,6 @@ public class Timer : MonoBehaviour
 
     public void ResetTimer()
     {
-        Debug.Log("Timer reset to" + gameTime);
         stopTimer = false;
         timerSlider.maxValue = gameTime;
         timerSlider.value = gameTime;
@@ -31,13 +30,11 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        elapsedTime += Time.deltaTime;
-
-        Debug.Log("Time: " + elapsedTime);
+        //elapsedTime += Time.deltaTime;
 
         if(stopTimer == false)
         {
-            timerSlider.value -= gameTime/elapsedTime; 
+            //timerSlider.value -= gameTime/elapsedTime; 
         }
         if(elapsedTime >= gameTime)
         {
