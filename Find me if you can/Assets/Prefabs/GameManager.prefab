@@ -81,18 +81,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timer: {fileID: 0}
-  sequences:
-  - video: {fileID: 32900000, guid: 06851c6b586bab64086925743f74e2c7, type: 3}
-    choice:
-    - leadsTo: 1
-      button: {fileID: 0}
-    - leadsTo: 2
-      button: {fileID: 0}
-  - video: {fileID: 32900000, guid: f65aceb48fe6dc443b9a1d60a858c61c, type: 3}
-    choice: []
-  - video: {fileID: 32900000, guid: cf7d5905f4f1b42eb9559bfbdcd6984e, type: 3}
-    choice:
-    - leadsTo: 0
-      button: {fileID: 0}
-    - leadsTo: 1
-      button: {fileID: 0}
+  shade: {fileID: 0}
+  sequences: []
