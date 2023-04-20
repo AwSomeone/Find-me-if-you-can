@@ -5,10 +5,11 @@ using UnityEngine.Video;
 using System;
 using UnityEngine.UI;
 
-
 public class GameManager : MonoBehaviour
 {
     public Timer timer;
+    public Image shade;
+
     [Serializable]
     public class StoryMap
     {
@@ -25,14 +26,6 @@ public class GameManager : MonoBehaviour
         public int leadsTo; //Which sequence the button should start
         public Button button;
     }
-    private void ClickFunction(int leadsTo)
-    {
-        Debug.Log("Button CLICKED");
-        previousSequence = currentSequence;
-        currentSequence = leadsTo;
-        ToggleButtons(false);
-        StartSequence(leadsTo);
-    }
 
     public StoryMap[] sequences;
     //Above is the code for what can be seen on the script component in the inspector.
@@ -46,33 +39,27 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         player = GetComponent<VideoPlayer>();
+        player.loopPointReached += EndReached;
         StartSequence(0);
     }
-
 
     //Starts Video
     private void StartSequence(int sequence)
     {
-        Debug.Log("Adding clip");
+        previousSequence = currentSequence;
+        currentSequence = sequence;
+
+        ToggleButtons(false);
         timer.ResetTimer();
 
-        if(sequences[sequence] == null)
-        {
-            Debug.Log("Error: Sequence out of bounds of array.");
-        }
         player.clip = sequences[sequence].video;
         player.playbackSpeed = 1f;
         player.Play();
-        player.loopPointReached += EndReached; //Pauses video at end point
-        //Assigns functions to buttonclicks
-        foreach (Choice choice in sequences[0].choice)
-        {
-            choice.button?.onClick.AddListener(() => ClickFunction(choice.leadsTo));
-        }
     }
 
     private void EndReached(VideoPlayer vp)
     {
+        Debug.Log("video ENDED");
         vp.playbackSpeed *= 0f;
         NewChoice();
     }
@@ -83,16 +70,11 @@ public class GameManager : MonoBehaviour
         timer.ResetTimer();
         ToggleButtons(true);
 
-        for (int i = 0; i <= sequences[currentSequence].choice.Length - 1; i++)
+        foreach (Choice choice in sequences[currentSequence].choice)
         {
-            Debug.Log(i);
-            sequences[currentSequence].choice[i].button?.onClick.AddListener(() => ClickFunction(sequences[currentSequence].choice[i].leadsTo));
-
-        } /*
-            foreach (Choice choice in sequences[currentSequence].choice)
-        {
-        Debug.Log("Adding listener");
-        }*/
+            Debug.Log("Adding listener" + sequences[currentSequence].choice.Length);
+            choice.button?.onClick.AddListener(() => StartSequence(choice.leadsTo));
+        }
 
     }
 
@@ -100,18 +82,16 @@ public class GameManager : MonoBehaviour
     {
         if(makeVisible)
         {
-            for(int i = 0;i <= sequences[currentSequence].choice.Length - 1;i++)
+            shade.color = new Color(shade.color.r, shade.color.g, shade.color.b, 0.22f);
+            for (int i = 0;i <= sequences[currentSequence].choice.Length - 1;i++)
             {
-                //Debug.Log("Option: " + sequences[currentSequence].choice[i].button.gameObject.name);
-
                 sequences[currentSequence].choice[i].button.gameObject.SetActive(true);
             }
         } else
         {
+            shade.color = new Color(shade.color.r, shade.color.g, shade.color.b, 0f);
             for (int i = 0; i <= sequences[previousSequence].choice.Length - 1; i++)
             {
-                //Debug.Log("Option: " + sequences[currentSequence].choice[i].button.gameObject.name);
-
                 sequences[previousSequence].choice[i].button.gameObject.SetActive(false);    
             }
         }
@@ -119,7 +99,6 @@ public class GameManager : MonoBehaviour
 
     public void TimerEnded()
     {
-        Debug.Log("Timer ended");
         StartSequence(sequences[currentSequence].choice[0].leadsTo);
     }
 }
