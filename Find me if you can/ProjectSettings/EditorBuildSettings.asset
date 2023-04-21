@@ -8,15 +8,15 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
-  - enabled: 1
-    path: Assets/Scenes/TestYuliia/TestYuliia.unity
-    guid: 717167eedbb704e15b9cdc270e51ebce
-  - enabled: 1
-    path: Assets/Scenes/TestYuliia/Option1.unity
-    guid: 769f73a0f2ddc486a9d4523902de338e
-  - enabled: 1
-    path: Assets/Scenes/TestYuliia/Option2.unity
-    guid: 98a7fb5de88c9482eaa900df07ccd76c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/Meny.unity
     guid: b111446e19a3c40198d2936aa527b800
