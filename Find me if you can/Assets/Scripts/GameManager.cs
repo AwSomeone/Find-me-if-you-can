@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Video;
 using System;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -15,6 +16,7 @@ public class GameManager : MonoBehaviour
     {
         [Space(10)]
         public VideoClip video;
+        public string sceneToStart;
         public Choice[] choice;
 
         //Add a subtitle and voiceover variable?
@@ -46,6 +48,11 @@ public class GameManager : MonoBehaviour
     //Starts Video
     private void StartSequence(int sequence)
     {
+        if(!String.IsNullOrEmpty(sequences[sequence].sceneToStart))
+        {
+            SceneManager.LoadScene(sequences[sequence].sceneToStart);
+        }
+
         previousSequence = currentSequence;
         currentSequence = sequence;
 
