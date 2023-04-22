@@ -685,7 +685,7 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[0].video
       value: 
-      objectReference: {fileID: 32900000, guid: a10f9b6c1d57e59439d1fd8f11543485, type: 3}
+      objectReference: {fileID: 32900000, guid: ebb28ed32f4ff4c319e22dfac2b35564, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[1].video
       value: 
