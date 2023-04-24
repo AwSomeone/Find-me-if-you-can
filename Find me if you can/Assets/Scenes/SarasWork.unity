@@ -850,9 +850,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7880631064731968657, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_text
-      value: No clues here, go to vctims home
+      value: No clues here, go to the victims home
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
@@ -1060,23 +1064,23 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[3].video
       value: 
-      objectReference: {fileID: 32900000, guid: 06851c6b586bab64086925743f74e2c7, type: 3}
+      objectReference: {fileID: 32900000, guid: 81b9c9df2e2a74f94be295c6954fd6fa, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[4].video
       value: 
-      objectReference: {fileID: 32900000, guid: 9f4908a4ce6b2bf48abafce1ed197248, type: 3}
+      objectReference: {fileID: 32900000, guid: c0d2a4172a02447da85d15d2f8562083, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[5].video
       value: 
-      objectReference: {fileID: 32900000, guid: 85a35332fab466545ba1be6e359952d9, type: 3}
+      objectReference: {fileID: 32900000, guid: e84741b195c61456b80573778457b7d1, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[6].video
       value: 
-      objectReference: {fileID: 32900000, guid: 06851c6b586bab64086925743f74e2c7, type: 3}
+      objectReference: {fileID: 32900000, guid: 81b9c9df2e2a74f94be295c6954fd6fa, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[7].video
       value: 
-      objectReference: {fileID: 32900000, guid: 9f4908a4ce6b2bf48abafce1ed197248, type: 3}
+      objectReference: {fileID: 32900000, guid: c0d2a4172a02447da85d15d2f8562083, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[8].video
       value: 
@@ -1103,15 +1107,15 @@ PrefabInstance:
       objectReference: {fileID: 32900000, guid: 7f2866ebec4b1f54fa77301853b782bb, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[5].sceneToStart
-      value: SarasRoom
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[6].sceneToStart
-      value: SarasRoom
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[7].sceneToStart
-      value: SarasRoom
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[10].sceneToStart
@@ -1171,7 +1175,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[12].choice.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[13].choice.Array.size
