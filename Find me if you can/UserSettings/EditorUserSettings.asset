@@ -6,31 +6,31 @@ EditorUserSettings:
   serializedVersion: 4
   m_ConfigSettings:
     RecentlyUsedSceneGuid-0:
-      value: 5a09555103575c5f0856542149770742131619737c7822367d7e1e30e6b7623b
-      flags: 0
-    RecentlyUsedSceneGuid-1:
       value: 5400035753020c5e090c0e7540775a4143154129282b74677d2c4862e7e2373d
       flags: 0
-    RecentlyUsedSceneGuid-2:
-      value: 5705500400510a5a0b5b5876447708444715402e292c7567787a1831e4b06c60
-      flags: 0
-    RecentlyUsedSceneGuid-3:
-      value: 5600000506035b085f5d5e7616775c4912154d7d747123602f704e37b1b7673d
-      flags: 0
-    RecentlyUsedSceneGuid-4:
-      value: 02080d5650015a03555f0a2113770844414e4d2b7d707166747e4831e6e16d3b
-      flags: 0
-    RecentlyUsedSceneGuid-5:
-      value: 0100055751015f5e5c570d7113770f414f4f1c78757b70312c7c4f64e0b86468
-      flags: 0
-    RecentlyUsedSceneGuid-6:
-      value: 50060d05000551595a5d5a2613770742424f1e2c7d2d27632f7b4a35b2e2646c
-      flags: 0
-    RecentlyUsedSceneGuid-7:
+    RecentlyUsedSceneGuid-1:
       value: 065302525d575e5e5f5b5c2013770a111215407c782b25697b791837e6e66361
       flags: 0
-    RecentlyUsedSceneGuid-8:
+    RecentlyUsedSceneGuid-2:
       value: 0602015407065c095d56592448765a4410154f7e2e7b7e612e28186ae4e43668
+      flags: 0
+    RecentlyUsedSceneGuid-3:
+      value: 0255045451535c5f0e570f2013770d4542154f7a742d7632792b4f67b0e36239
+      flags: 0
+    RecentlyUsedSceneGuid-4:
+      value: 50060d05000551595a5d5a2613770742424f1e2c7d2d27632f7b4a35b2e2646c
+      flags: 0
+    RecentlyUsedSceneGuid-5:
+      value: 02080d5650015a03555f0a2113770844414e4d2b7d707166747e4831e6e16d3b
+      flags: 0
+    RecentlyUsedSceneGuid-6:
+      value: 5705500400510a5a0b5b5876447708444715402e292c7567787a1831e4b06c60
+      flags: 0
+    RecentlyUsedSceneGuid-7:
+      value: 0100055751015f5e5c570d7113770f414f4f1c78757b70312c7c4f64e0b86468
+      flags: 0
+    RecentlyUsedSceneGuid-8:
+      value: 5600000506035b085f5d5e7616775c4912154d7d747123602f704e37b1b7673d
       flags: 0
     RecentlyUsedSceneGuid-9:
       value: 0652075755045e580f085f7443770d4742161b727c7a7f36297a4435b6e6306a
