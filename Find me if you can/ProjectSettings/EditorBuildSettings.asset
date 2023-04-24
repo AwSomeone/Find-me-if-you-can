@@ -36,6 +36,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Saras Home/SarasRoom.unity
     guid: ec31017cbf3634274ac8029fd39f4fd2
   - enabled: 1
+    path: Assets/Scenes/Saras Home/SarasRoommate.unity
+    guid: 514cc6232324f4c9db5789e0b93d373e
+  - enabled: 1
     path: Assets/Scenes/Station.unity
     guid: ad024f5dc9cbc4254b708e0b4b242c6a
   m_configObjects: {}
