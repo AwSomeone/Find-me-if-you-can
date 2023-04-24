@@ -134,6 +134,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89647a94d4df39d43b9eab4abd8d3f7d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &124675247 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7252312016316941505, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
+  m_PrefabInstance: {fileID: 1576028270}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &221166096
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,6 +350,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5697643140601592581, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
   m_PrefabInstance: {fileID: 1391153621}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1111964165 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+  m_PrefabInstance: {fileID: 1391153621}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111964164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4902c1f36ea16042a9f41fbe8a9f016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1129313580
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -683,6 +705,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7252312016316941518, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
+      propertyPath: gm
+      value: 
+      objectReference: {fileID: 1111964165}
+    - target: {fileID: 7252312016316941518, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
+      propertyPath: timerSlider
+      value: 
+      objectReference: {fileID: 124675247}
     - target: {fileID: 7252312016316941519, guid: ebf671dce855f844fab4d3e1ffc3f990, type: 3}
       propertyPath: m_Name
       value: Timer
