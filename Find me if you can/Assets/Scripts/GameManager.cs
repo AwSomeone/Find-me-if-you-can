@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
 {
     public Timer timer;
     public Image shade;
+    public int skipToSequence = 0;
 
     [Serializable]
     public class StoryMap
@@ -42,7 +43,7 @@ public class GameManager : MonoBehaviour
     {
         player = GetComponent<VideoPlayer>();
         player.loopPointReached += EndReached;
-        StartSequence(0);
+        StartSequence(skipToSequence);
     }
 
     //Starts Video
