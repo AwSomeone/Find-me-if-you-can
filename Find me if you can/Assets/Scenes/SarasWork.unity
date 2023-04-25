@@ -1060,7 +1060,7 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[2].video
       value: 
-      objectReference: {fileID: 32900000, guid: f65aceb48fe6dc443b9a1d60a858c61c, type: 3}
+      objectReference: {fileID: 32900000, guid: 09e3d9c092f2bea42ba551e71ea2a6b3, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[3].video
       value: 
@@ -1084,19 +1084,19 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[8].video
       value: 
-      objectReference: {fileID: 32900000, guid: ccdddc7083b55004e9ee7c0189a63bd9, type: 3}
+      objectReference: {fileID: 32900000, guid: e587760cf729f5f4aa1e109804604615, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[9].video
       value: 
-      objectReference: {fileID: 32900000, guid: a4a97ea505b6f9b408fdaff6ad9bafdf, type: 3}
+      objectReference: {fileID: 32900000, guid: 79a9e34c19808034989ffae0716fb707, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[10].video
       value: 
-      objectReference: {fileID: 32900000, guid: f61647eb2a2700a41b91e1f733d58df9, type: 3}
+      objectReference: {fileID: 32900000, guid: 34d1df16152e61149829ef54a60356f7, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[11].video
       value: 
-      objectReference: {fileID: 32900000, guid: 7f2866ebec4b1f54fa77301853b782bb, type: 3}
+      objectReference: {fileID: 32900000, guid: f75e1354f80813f41a249197f16c58fe, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[12].video
       value: 
