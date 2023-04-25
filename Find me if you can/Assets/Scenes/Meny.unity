@@ -133,7 +133,7 @@ PrefabInstance:
     - target: {fileID: 4123326673531140047, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
       propertyPath: musicClip
       value: 
-      objectReference: {fileID: 8300000, guid: 032920ea8eaa2484abfdd9d418c1f888, type: 3}
+      objectReference: {fileID: 8300000, guid: bcb71efa73f0642b0af11cdf0bc05e9d, type: 3}
     - target: {fileID: 4123326673531140047, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
       propertyPath: audioSource
       value: 
@@ -613,8 +613,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f841140e371c44f908455edc08056a66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audiosource: {fileID: 0}
-  startClip: {fileID: 0}
+  audiosource: {fileID: 1022825701}
+  startClip: {fileID: 8300000, guid: 46d9406a30dca41e0b88e6932c947a83, type: 3}
 --- !u!1 &1573817819
 GameObject:
   m_ObjectHideFlags: 0
@@ -762,8 +762,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c44cd235e23344a869a2a29aac179b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  audioSource: {fileID: 0}
-  quitClip: {fileID: 0}
+  audioSource: {fileID: 1022825701}
+  quitClip: {fileID: 8300000, guid: 46d9406a30dca41e0b88e6932c947a83, type: 3}
 --- !u!1 &1739082629
 GameObject:
   m_ObjectHideFlags: 0
