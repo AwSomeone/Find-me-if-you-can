@@ -342,6 +342,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 32900000, guid: 64ebbbc1f01704cd799a4fffa32e78d6, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[1].sceneToStart
+      value: Boyfriend
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[0].choice.Array.size
       value: 2
       objectReference: {fileID: 0}
