@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 780.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Hierarchy
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-  controlID: 1029
+  controlID: 44
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -94,8 +94,8 @@ MonoBehaviour:
     y: 0
     width: 290.4
     height: 432
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -177,7 +177,7 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: Default
+  m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-  controlID: 960
+  controlID: 45
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,7 +248,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 951
+  controlID: 46
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -318,23 +318,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Videos/Endings
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Videos/Endings
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\AwSom\3D Objects\Unity projects\MAPP\Find me if you
     can\Find-me-if-you-can\Find me if you can
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c66a0000
-    m_LastClickedID: 27334
-    m_ExpandedIDs: ffffffff00000000c26a0000c46a0000c66a0000c86a000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 78.20001}
+    m_SelectedIDs: 0e6d0000
+    m_LastClickedID: 27918
+    m_ExpandedIDs: 00000000566b0000586b00005a6b00005c6b000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -362,7 +362,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: ffffffff00000000c26a0000c46a0000c66a0000c86a0000ca6a0000cc6a0000
+    m_ExpandedIDs: 00000000566b0000586b00005a6b00005c6b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -454,7 +454,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 279.19995
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -492,9 +492,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 50a6ffff22a9ffff3eaaffff32acffff40b1ffff4cb1ffff58b1ffff7eb1ffff72b3ffff46b5ffff04b6fffff0b7ffff94baffff56bbfffff8bdffff34beffff04c0ffff0cc0ffff52c4ffff7ec6ffff1ac7ffffc2cfffff6ed2fffffed7ffff54d9ffff0addffff68deffff04dfffff26e1ffff4ee1ffffb0e2ffff0ae4ffff0eedffff2aeeffff42fbffffe0880000
+      m_SelectedIDs: 966e0000
+      m_LastClickedID: 28310
+      m_ExpandedIDs: 7af4ffffb6f4ffff04f7ffff24fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -799,9 +799,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 298.90244, y: 190.57211, z: -0.8788686}
+    m_Target: {x: 346.5, y: 195, z: 0}
     speed: 2
-    m_Value: {x: 306.61734, y: 189.08769, z: -0.78152287}
+    m_Value: {x: 346.5, y: 195, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -852,9 +852,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 226.05724
+    m_Target: 397.60187
     speed: 2
-    m_Value: 216.32271
+    m_Value: 397.60187
   m_Ortho:
     m_Target: 1
     speed: 2

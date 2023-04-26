@@ -9,12 +9,12 @@ public class Timer : MonoBehaviour
     public GameManager gm;
 
     [NonSerialized]
-    public float gameTime = 10f;
+    public float gameTime = 5f;
     public Slider timerSlider;
     private bool stopTimer;
     private float elapsedTime;
 
-    void Start()
+    void OnEnable()
     {
         timerSlider = gameObject.GetComponent<Slider>();
         ResetTimer();
@@ -30,15 +30,15 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        //elapsedTime += Time.deltaTime;
-
-        if(stopTimer == false)
+        if(!stopTimer)
         {
-            //timerSlider.value -= gameTime/elapsedTime; 
+            elapsedTime += Time.deltaTime;
+            timerSlider.value = gameTime - elapsedTime;
         }
+
         if(elapsedTime >= gameTime)
         {
-            elapsedTime = gameTime;
+            gameTime = 10f;
 
             stopTimer = true;
             gm.TimerEnded();

@@ -55,11 +55,13 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(sequences[sequence].sceneToStart);
         }
 
+        
+
         previousSequence = currentSequence;
         currentSequence = sequence;
 
         ToggleButtons(false);
-        timer.ResetTimer();
+        //timer.ResetTimer();
 
         player.clip = sequences[sequence].video;
         player.playbackSpeed = 1f;
@@ -70,6 +72,12 @@ public class GameManager : MonoBehaviour
     {
         //Debug.Log("video ENDED");
         vp.playbackSpeed *= 0f;
+
+        if (currentSequence == 4)
+        {
+            timer.gameObject.SetActive(true);
+        }
+
         NewChoice();
     }
 
@@ -108,6 +116,8 @@ public class GameManager : MonoBehaviour
 
     public void TimerEnded()
     {
+        Debug.Log("TIMER ENDED");
+        timer.gameObject.SetActive(false);
         StartSequence(sequences[currentSequence].choice[0].leadsTo);
     }
 
