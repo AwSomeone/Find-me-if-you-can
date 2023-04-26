@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Image shade;
     public int skipToSequence = 0;
 
+
     [Serializable]
     public class StoryMap
     {
@@ -109,4 +110,10 @@ public class GameManager : MonoBehaviour
     {
         StartSequence(sequences[currentSequence].choice[0].leadsTo);
     }
+
+    public void SkipToEnd()
+    {
+        player.time = player.clip.length;
+    }
+
 }
