@@ -7,7 +7,7 @@ public class SkipVideo : MonoBehaviour, IPointerClickHandler
 {
     public GameManager gm;
     private DateTime clickedFirstTime;
-    private const int DOUBLE_CLICK_MILLISECONDS_BETWEEN = 1000; //så länge vi ska vänta mellan click
+    private const int DOUBLE_CLICK_MILLISECONDS_BETWEEN = 500; //så länge vi ska vänta mellan click
 
     // Start is called before the first frame update
     void Start()
