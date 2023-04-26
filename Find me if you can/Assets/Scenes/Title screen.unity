@@ -1040,7 +1040,7 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[0].video
       value: 
-      objectReference: {fileID: 32900000, guid: 5ea8307af7eba4b20ae668aab8d15301, type: 3}
+      objectReference: {fileID: 32900000, guid: 5a6976c1f3bfe4e589f2932ef9ff82fa, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[1].sceneToStart
       value: SarasHome
