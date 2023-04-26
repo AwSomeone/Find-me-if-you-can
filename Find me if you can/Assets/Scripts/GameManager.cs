@@ -67,7 +67,7 @@ public class GameManager : MonoBehaviour
 
     private void EndReached(VideoPlayer vp)
     {
-        Debug.Log("video ENDED");
+        //Debug.Log("video ENDED");
         vp.playbackSpeed *= 0f;
         NewChoice();
     }
@@ -80,7 +80,7 @@ public class GameManager : MonoBehaviour
 
         foreach (Choice choice in sequences[currentSequence].choice)
         {
-            Debug.Log("Adding listener" + sequences[currentSequence].choice.Length);
+            //Debug.Log("Adding listener" + sequences[currentSequence].choice.Length);
             choice.button?.onClick.AddListener(() => StartSequence(choice.leadsTo));
         }
 
