@@ -11,7 +11,7 @@ public class DialogueBox : MonoBehaviour
 
     private int index;
     // Start is called before the first frame update
-    void Start()
+    void OnEnable()
     {
         textComponent.text = string.Empty;
         StartDialogue();
@@ -24,8 +24,8 @@ public class DialogueBox : MonoBehaviour
             NextLine();
         }
         else {
-            StopAllCoroutines();
-            textComponent.text = lines[index];
+            /*StopAllCoroutines();
+            textComponent.text = lines[index];*/
         }
     }
 

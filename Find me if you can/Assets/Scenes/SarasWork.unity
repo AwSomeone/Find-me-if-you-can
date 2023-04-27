@@ -557,9 +557,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   textComponent: {fileID: 1645711929}
   lines:
-  - 
-  - 
-  textSpeed: 0.3
+  - You did not find any clues, click to proceed!
+  textSpeed: 0.06
 --- !u!114 &261016889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -824,11 +823,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397932, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397932, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -171
+      value: -161
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397932, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -856,7 +855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_text
-      value: No clues here, go to the victims home
+      value: Go to the victims home
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
@@ -938,11 +937,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397932, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -217
+      value: -215
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397932, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -173
+      value: -157
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397932, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -966,7 +965,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_text
-      value: 'No clues here, go back and speak to her manager '
+      value: 'Go back and speak to her manager '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
@@ -1045,6 +1044,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 1652750497}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 261016886}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.size
       value: 13
@@ -1453,11 +1456,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397932, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 206
+      value: 208
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397932, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -173
+      value: -157.00002
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397932, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1928,7 +1931,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You did not find any clues, choose your next move!
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: e73a58f6e2794ae7b1b7e50b7fb811b0, type: 2}

@@ -11,6 +11,7 @@ public class GameManager : MonoBehaviour
     public Timer timer;
     public Image shade;
     public int skipToSequence = 0;
+    public GameObject dialogueBox;
 
 
     [Serializable]
@@ -86,6 +87,12 @@ public class GameManager : MonoBehaviour
     private void NewChoice()
     {
         timer.ResetTimer();
+
+        if(currentSequence == 5 || currentSequence == 6 || currentSequence == 7 || currentSequence == 10 || currentSequence == 11)
+        {
+            dialogueBox.SetActive(true);
+        }
+
         ToggleButtons(true);
 
         foreach (Choice choice in sequences[currentSequence].choice)
