@@ -743,6 +743,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 5005440042213896422, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -13.685181
+      objectReference: {fileID: 0}
     - target: {fileID: 5654619519370342074, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_FirstSelected
       value: 
@@ -1628,6 +1632,14 @@ PrefabInstance:
       propertyPath: sequences.Array.data[19].video
       value: 
       objectReference: {fileID: 32900000, guid: 5ef92e340fd444235811b8dbc86f5e11, type: 3}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[2].hasTimer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[4].hasTimer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[0].choice.Array.size
       value: 2
