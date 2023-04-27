@@ -90,7 +90,10 @@ public class GameManager : MonoBehaviour
 
         if(currentSequence == 5 || currentSequence == 6 || currentSequence == 7 || currentSequence == 10 || currentSequence == 11)
         {
-            dialogueBox.SetActive(true);
+            if(dialogueBox)
+            {
+                dialogueBox.SetActive(true);
+            }
         }
 
         ToggleButtons(true);
