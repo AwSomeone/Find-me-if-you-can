@@ -14,6 +14,11 @@ public class Timer : MonoBehaviour
     private bool stopTimer;
     private float elapsedTime;
 
+    private void Start()
+    {
+        stopTimer = true;
+    }
+
     void OnEnable()
     {
         timerSlider = gameObject.GetComponent<Slider>();

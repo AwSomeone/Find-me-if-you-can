@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
         //Debug.Log("video ENDED");
         vp.playbackSpeed *= 0f;
 
-        if (currentSequence == 4)
+        if (currentSequence == 4 && SceneManager.GetActiveScene().name.Equals("Boyfriend"))
         {
             timer.gameObject.SetActive(true);
         }
