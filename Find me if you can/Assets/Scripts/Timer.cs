@@ -11,13 +11,8 @@ public class Timer : MonoBehaviour
     [NonSerialized]
     public float gameTime = 5f;
     public Slider timerSlider;
-    private bool stopTimer;
+    private bool stopTimer = true;
     private float elapsedTime;
-
-    private void Start()
-    {
-        stopTimer = true;
-    }
 
     void OnEnable()
     {
@@ -27,14 +22,16 @@ public class Timer : MonoBehaviour
 
     public void ResetTimer()
     {
+        Debug.Log("TIMER RESET");
         stopTimer = false;
         timerSlider.maxValue = gameTime;
         timerSlider.value = gameTime;
-        elapsedTime = 0;
+        elapsedTime = -1;
     }
 
     void Update()
     {
+        Debug.Log(stopTimer);
         if(!stopTimer)
         {
             elapsedTime += Time.deltaTime;
@@ -43,11 +40,10 @@ public class Timer : MonoBehaviour
 
         if(elapsedTime >= gameTime)
         {
-            gameTime = 10f;
+            gameTime = 5f;
 
             stopTimer = true;
             gm.TimerEnded();
-            ResetTimer();
         }
 
     }

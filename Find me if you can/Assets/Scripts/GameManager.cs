@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
         public VideoClip video;
         public string sceneToStart;
         public Choice[] choice;
+        public bool hasTimer;
 
         //Add a subtitle and voiceover variable?
     }
@@ -73,7 +74,7 @@ public class GameManager : MonoBehaviour
         //Debug.Log("video ENDED");
         vp.playbackSpeed *= 0f;
 
-        if (currentSequence == 4 && SceneManager.GetActiveScene().name.Equals("Boyfriend"))
+        if (sequences[currentSequence].hasTimer)
         {
             timer.gameObject.SetActive(true);
         }
