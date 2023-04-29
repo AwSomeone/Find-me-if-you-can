@@ -22,7 +22,6 @@ public class Timer : MonoBehaviour
 
     public void ResetTimer()
     {
-        Debug.Log("TIMER RESET");
         stopTimer = false;
         timerSlider.maxValue = gameTime;
         timerSlider.value = gameTime;
@@ -31,7 +30,6 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(stopTimer);
         if(!stopTimer)
         {
             elapsedTime += Time.deltaTime;

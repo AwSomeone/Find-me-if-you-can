@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public Image shade;
     public int skipToSequence = 0;
     public GameObject dialogueBox;
+    private bool rewind;
 
 
     [Serializable]
@@ -65,15 +66,28 @@ public class GameManager : MonoBehaviour
         ToggleButtons(false);
         //timer.ResetTimer();
 
+        Debug.Log("Changing video");
+        rewind = false;
         player.clip = sequences[sequence].video;
         player.playbackSpeed = 1f;
         player.Play();
     }
 
+    private void Update()
+    {
+        if (rewind == true)
+        {
+            Debug.Log("REWINDING" + player.frame);
+            player.frame = player.frame + 5; // can get fancy here if you want, this is super basic
+        }
+    }
+
     private void EndReached(VideoPlayer vp)
     {
+        rewind = true;
+        vp.Stop();
         //Debug.Log("video ENDED");
-        vp.playbackSpeed *= 0f;
+        //vp.playbackSpeed *= 0f;
 
         if (sequences[currentSequence].hasTimer)
         {
