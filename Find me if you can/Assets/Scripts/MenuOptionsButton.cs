@@ -5,10 +5,10 @@ using UnityEngine;
 public class MenuOptionsButton : MonoBehaviour
 {
     [SerializeField] private AudioSource audioSource;
-    [SerializeField] private AudioClip startClip;
+    [SerializeField] private AudioClip optionsClip;
 
-    public void Start()
+    public void PlaySound()
     {
-        audioSource.PlayOneShot(startClip);
+        audioSource.PlayOneShot(optionsClip);
     }
 }

@@ -151,6 +151,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4123326673531140047, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
+      propertyPath: clip
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123326673531140047, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
       propertyPath: musicClip
       value: 
       objectReference: {fileID: 8300000, guid: bcb71efa73f0642b0af11cdf0bc05e9d, type: 3}
@@ -535,7 +539,7 @@ GameObject:
   - component: {fileID: 481633512}
   - component: {fileID: 481633516}
   - component: {fileID: 481633515}
-  - component: {fileID: 481633514}
+  - component: {fileID: 481633517}
   - component: {fileID: 481633513}
   m_Layer: 5
   m_Name: GoBack
@@ -633,9 +637,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1398864787}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
+      - m_Target: {fileID: 481633517}
+        m_TargetAssemblyTypeName: MenuOptionsButton, Assembly-CSharp
+        m_MethodName: PlaySound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -645,20 +649,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &481633514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 481633511}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c44cd235e23344a869a2a29aac179b4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSource: {fileID: 1022825701}
-  quitClip: {fileID: 8300000, guid: 46d9406a30dca41e0b88e6932c947a83, type: 3}
 --- !u!114 &481633515
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -697,6 +687,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481633511}
   m_CullTransparentMesh: 1
+--- !u!114 &481633517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481633511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d683cf3adb0fa4bbf8ac344c37ea2a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1022825701}
+  optionsClip: {fileID: 8300000, guid: 264d547466039453b944656577d19498, type: 3}
 --- !u!1 &528186571
 GameObject:
   m_ObjectHideFlags: 0
@@ -1115,7 +1119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!82 &1398864787
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1126,7 +1130,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: bc881831770ea4efaa9f636c91797d12, type: 3}
+  m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -1375,7 +1379,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audiosource: {fileID: 1022825701}
-  startClip: {fileID: 8300000, guid: 46d9406a30dca41e0b88e6932c947a83, type: 3}
+  startClip: {fileID: 8300000, guid: 264d547466039453b944656577d19498, type: 3}
 --- !u!1 &1573817819
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,7 +1528,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioSource: {fileID: 1022825701}
-  quitClip: {fileID: 8300000, guid: 46d9406a30dca41e0b88e6932c947a83, type: 3}
+  quitClip: {fileID: 8300000, guid: 264d547466039453b944656577d19498, type: 3}
 --- !u!1 &1581736165
 GameObject:
   m_ObjectHideFlags: 0
@@ -1612,6 +1616,7 @@ GameObject:
   - component: {fileID: 1739082630}
   - component: {fileID: 1739082633}
   - component: {fileID: 1739082632}
+  - component: {fileID: 1739082634}
   - component: {fileID: 1739082631}
   m_Layer: 5
   m_Name: Options
@@ -1709,9 +1714,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1398864787}
-        m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
-        m_MethodName: Play
+      - m_Target: {fileID: 1739082634}
+        m_TargetAssemblyTypeName: MenuOptionsButton, Assembly-CSharp
+        m_MethodName: PlaySound
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1759,6 +1764,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1739082629}
   m_CullTransparentMesh: 1
+--- !u!114 &1739082634
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739082629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d683cf3adb0fa4bbf8ac344c37ea2a2d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1022825701}
+  optionsClip: {fileID: 8300000, guid: 264d547466039453b944656577d19498, type: 3}
 --- !u!1001 &1865986973
 PrefabInstance:
   m_ObjectHideFlags: 0
