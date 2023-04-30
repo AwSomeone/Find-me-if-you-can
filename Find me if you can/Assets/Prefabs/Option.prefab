@@ -190,8 +190,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Go to the victims home
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 81c6e49eee0734a978044a07ea6e77c8, type: 2}
-  m_sharedMaterial: {fileID: 7699971706140614224, guid: 81c6e49eee0734a978044a07ea6e77c8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 95b1d0a48974843a7890ea41f6ff2ae2, type: 2}
+  m_sharedMaterial: {fileID: -5972505191798509826, guid: 95b1d0a48974843a7890ea41f6ff2ae2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
