@@ -26,7 +26,6 @@ MonoBehaviour:
   vertical: 0
   controlID: 421
 --- !u!114 &2
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
