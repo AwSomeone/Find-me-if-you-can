@@ -156,4 +156,15 @@ public class GameManager : MonoBehaviour
         player.playbackSpeed = 3f; // speed 3x
     }
 
+   public void PauseGame()
+    {
+        // player.time = player.clip.frameRate;
+        player.Stop();
+
+    }
+
+    public void ResumeGame()
+    {
+        player.Play();
+    }
 }
