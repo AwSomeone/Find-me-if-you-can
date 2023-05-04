@@ -8,6 +8,7 @@ public class SkipVideo : MonoBehaviour, IPointerClickHandler
     public GameManager gm;
     private DateTime clickedFirstTime;
     private const int DOUBLE_CLICK_MILLISECONDS_BETWEEN = 500; //så länge vi ska vänta mellan click
+    private int clickCount = 0; 
 
     // Start is called before the first frame update
     void Start()
@@ -21,15 +22,24 @@ public class SkipVideo : MonoBehaviour, IPointerClickHandler
     {
         var timeBetweenClicks = DateTime.Now - clickedFirstTime;
 
-     
         if (timeBetweenClicks.TotalMilliseconds > DOUBLE_CLICK_MILLISECONDS_BETWEEN)
         {
-            clickedFirstTime = DateTime.Now; 
+            clickedFirstTime = DateTime.Now;
+            clickCount = 1;
         }
         else
-        { 
-            // Skip to end of the video
-            gm.SkipToEnd();
+        {
+            clickCount++;
+            
+            if (clickCount == 2)
+            {
+                gm.SpeedUpVideo();
+            }
+            else if (clickCount == 3)
+            {
+                gm.SkipToEnd();
+
+            }
         }
     }
 }

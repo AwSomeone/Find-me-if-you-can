@@ -151,4 +151,9 @@ public class GameManager : MonoBehaviour
         player.time = player.clip.length;
     }
 
+    public void SpeedUpVideo()
+    {
+        player.playbackSpeed = 3f; // speed 3x
+    }
+
 }
