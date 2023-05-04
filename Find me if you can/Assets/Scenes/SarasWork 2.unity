@@ -429,38 +429,6 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
-      propertyPath: m_text
-      value: Interview her manager
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
-      propertyPath: m_margin.w
-      value: 5.339464
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
-      propertyPath: m_margin.x
-      value: 9.066238
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
-      propertyPath: m_margin.y
-      value: 7.742487
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
-      propertyPath: m_margin.z
-      value: 9.291016
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
-      propertyPath: m_fontColor.b
-      value: 0.98589355
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
-      propertyPath: m_fontColor.g
-      value: 0.98589355
-      objectReference: {fileID: 0}
-    - target: {fileID: 7880631064731968671, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
-      propertyPath: m_fontColor.r
-      value: 0.990566
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
 --- !u!114 &101140844 stripped
