@@ -320,11 +320,11 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[1].video
       value: 
-      objectReference: {fileID: 32900000, guid: c5b080fdfbd094a49b81dd16ed9bde2b, type: 3}
+      objectReference: {fileID: 32900000, guid: a10f9b6c1d57e59439d1fd8f11543485, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[2].video
       value: 
-      objectReference: {fileID: 32900000, guid: 33a46605013924cd0ab27c5c968d00e0, type: 3}
+      objectReference: {fileID: 32900000, guid: 44cd742bef24f480dacf540d8c85d0bb, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[3].video
       value: 
