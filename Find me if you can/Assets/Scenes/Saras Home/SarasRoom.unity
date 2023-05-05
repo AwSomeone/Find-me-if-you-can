@@ -4650,11 +4650,11 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[8].video
       value: 
-      objectReference: {fileID: 32900000, guid: f74db627c95b7405f8da440352464f7d, type: 3}
+      objectReference: {fileID: 32900000, guid: 4d9cc0f2f4e6641289a3b874003af69f, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[9].video
       value: 
-      objectReference: {fileID: 32900000, guid: 0ded15c31879f460cb0759efa3b1f374, type: 3}
+      objectReference: {fileID: 32900000, guid: 4aeba8035d6254ad4ba7c209f235ca07, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[10].video
       value: 
