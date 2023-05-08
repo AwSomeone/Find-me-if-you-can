@@ -2128,7 +2128,7 @@ PrefabInstance:
       objectReference: {fileID: 99724740}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: skipToSequence
-      value: 0
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.size
@@ -5563,6 +5563,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1497078230990563782, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
+      propertyPath: m_Volume
+      value: 0.643
+      objectReference: {fileID: 0}
     - target: {fileID: 1497078230990563782, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
       propertyPath: m_audioClip
       value: 
