@@ -4440,8 +4440,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 564, y: 314}
-  m_SizeDelta: {x: 80, y: 80}
+  m_AnchoredPosition: {x: 575, y: 328}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1903223164
 MonoBehaviour:
@@ -4650,11 +4650,11 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[8].video
       value: 
-      objectReference: {fileID: 32900000, guid: 27d3610daf3304425ada444031202bc9, type: 3}
+      objectReference: {fileID: 32900000, guid: 4d9cc0f2f4e6641289a3b874003af69f, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[9].video
       value: 
-      objectReference: {fileID: 32900000, guid: 294e6caa577184a51809bb24f342e3ea, type: 3}
+      objectReference: {fileID: 32900000, guid: 4aeba8035d6254ad4ba7c209f235ca07, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[10].video
       value: 
