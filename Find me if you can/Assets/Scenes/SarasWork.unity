@@ -1473,6 +1473,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Panel: {fileID: 1135907933}
+  audioSource: {fileID: 1232640224}
+  startClip: {fileID: 8300000, guid: 01f5b3824d4054cdcbd3cda557e1b9b1, type: 3}
 --- !u!1 &672735505 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7880631064159397933, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
