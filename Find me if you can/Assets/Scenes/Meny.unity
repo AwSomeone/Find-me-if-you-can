@@ -1179,7 +1179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Volume
+  m_Text: Music
 --- !u!222 &1025344840
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2229,7 +2229,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4574467294666720157, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4977496979153809575, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_IsActive
@@ -2237,7 +2237,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5005440042213896422, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 5654619519370342074, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_FirstSelected
