@@ -159,7 +159,7 @@ public class GameManager : MonoBehaviour
    public void PauseGame()
     {
         // player.time = player.clip.frameRate;
-        player.Stop();
+        player.Pause();
 
     }
 
