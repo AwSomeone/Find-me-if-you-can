@@ -484,23 +484,23 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[4].video
       value: 
-      objectReference: {fileID: 32900000, guid: bfe8dab6231a4424ba0b5443880f066c, type: 3}
+      objectReference: {fileID: 32900000, guid: bd6289e2254de44f388b86b459474b9c, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[5].video
       value: 
-      objectReference: {fileID: 32900000, guid: befe4ab44cdf24494a2491f7c745ab8f, type: 3}
+      objectReference: {fileID: 32900000, guid: 24a0e6b2ca5284234a6af7e388adf031, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[6].video
       value: 
-      objectReference: {fileID: 32900000, guid: 404466b5654144565a174f94edb9140b, type: 3}
+      objectReference: {fileID: 32900000, guid: 630d6195a1eed4a2baab3e91460b9dab, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[7].video
       value: 
-      objectReference: {fileID: 32900000, guid: 404466b5654144565a174f94edb9140b, type: 3}
+      objectReference: {fileID: 32900000, guid: 630d6195a1eed4a2baab3e91460b9dab, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[8].video
       value: 
-      objectReference: {fileID: 32900000, guid: befe4ab44cdf24494a2491f7c745ab8f, type: 3}
+      objectReference: {fileID: 32900000, guid: 24a0e6b2ca5284234a6af7e388adf031, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[0].hasTimer
       value: 0
