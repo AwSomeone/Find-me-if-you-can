@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     public GameObject infoPanel;
     private bool rewind;
 
+    public MusicPlayer musicPlayer;
+    public MusicManager musicManager; // G
 
     [Serializable]
     public class StoryMap
@@ -23,6 +25,7 @@ public class GameManager : MonoBehaviour
         public string sceneToStart;
         public Choice[] choice;
         public bool hasTimer;
+        public AudioClip musicClip; //G 
 
         //Add a subtitle and voiceover variable?
     }
@@ -48,6 +51,7 @@ public class GameManager : MonoBehaviour
         player = GetComponent<VideoPlayer>();
         player.loopPointReached += EndReached;
         StartSequence(skipToSequence);
+
     }
 
     //Starts Video
@@ -56,6 +60,11 @@ public class GameManager : MonoBehaviour
         if(!String.IsNullOrEmpty(sequences[sequence].sceneToStart))
         {
             SceneManager.LoadScene(sequences[sequence].sceneToStart);
+        } 
+        if (sequences[sequence].musicClip != null) // G
+        {
+            musicManager.audioSource.clip = sequences[sequence].musicClip; // G
+            musicManager.audioSource.Play(); // G
         }
 
         
@@ -73,6 +82,7 @@ public class GameManager : MonoBehaviour
         player.Play();
     }
 
+   
     private void Update()
     {
         if (rewind == true)
@@ -92,6 +102,13 @@ public class GameManager : MonoBehaviour
         if (sequences[currentSequence].hasTimer)
         {
             timer.gameObject.SetActive(true);
+        }
+
+       // musicManager.audioSource.Stop(); // G
+
+        if (musicManager != null){
+            
+            musicManager.StopMusic();
         }
 
         NewChoice();
@@ -158,13 +175,19 @@ public class GameManager : MonoBehaviour
 
    public void PauseGame()
     {
-        // player.time = player.clip.frameRate;
         player.Pause();
+        
+        musicManager.PauseMusic(); //G
 
     }
 
     public void ResumeGame()
     {
         player.Play();
+        
+        musicManager.ResumeMusic(); //G
     }
+
+ 
+    
 }
