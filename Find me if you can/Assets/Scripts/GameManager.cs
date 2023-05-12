@@ -14,6 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject dialogueBox;
     private bool rewind;
 
+    public MusicPlayer musicPlayer;
 
     [Serializable]
     public class StoryMap
@@ -48,6 +49,7 @@ public class GameManager : MonoBehaviour
         player = GetComponent<VideoPlayer>();
         player.loopPointReached += EndReached;
         StartSequence(skipToSequence);
+
     }
 
     //Starts Video
@@ -73,6 +75,7 @@ public class GameManager : MonoBehaviour
         player.Play();
     }
 
+   
     private void Update()
     {
         if (rewind == true)
@@ -158,7 +161,6 @@ public class GameManager : MonoBehaviour
 
    public void PauseGame()
     {
-        // player.time = player.clip.frameRate;
         player.Pause();
 
     }
@@ -167,4 +169,6 @@ public class GameManager : MonoBehaviour
     {
         player.Play();
     }
+
+    
 }
