@@ -16,7 +16,7 @@ public class MusicManager : MonoBehaviour
         get { return instance; }
     }
 
-    private void Awake()
+   private void Awake()
     {
         if (instance != null && instance != this)
         {
@@ -25,7 +25,9 @@ public class MusicManager : MonoBehaviour
         else
         {
             instance = this;
-            DontDestroyOnLoad(this.gameObject);
+            // Move the MusicManager to a separate GameObject
+            // and mark it as "Don't Destroy On Load"
+            DontDestroyOnLoad(transform.root.gameObject);
         }
     }
 
@@ -65,5 +67,11 @@ public class MusicManager : MonoBehaviour
     public void ResumeMusic()
     {
         audioSource.UnPause();
+    }
+
+     public void StopMusic()
+    {
+        audioSource.Stop();
+        audioSource.clip = null;
     }
 }

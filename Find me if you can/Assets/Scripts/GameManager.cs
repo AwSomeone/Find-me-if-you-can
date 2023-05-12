@@ -63,8 +63,8 @@ public class GameManager : MonoBehaviour
         } 
         if (sequences[sequence].musicClip != null) // G
         {
-            musicManager.audioSource.clip = sequences[sequence].musicClip;
-            musicManager.audioSource.Play();
+            musicManager.audioSource.clip = sequences[sequence].musicClip; // G
+            musicManager.audioSource.Play(); // G
         }
 
         
@@ -104,7 +104,12 @@ public class GameManager : MonoBehaviour
             timer.gameObject.SetActive(true);
         }
 
-        musicManager.audioSource.Stop(); // G
+       // musicManager.audioSource.Stop(); // G
+
+        if (musicManager != null){
+            
+            musicManager.StopMusic();
+        }
 
         NewChoice();
     }
@@ -171,14 +176,16 @@ public class GameManager : MonoBehaviour
    public void PauseGame()
     {
         player.Pause();
-        musicManager.PauseMusic();
+        
+        musicManager.PauseMusic(); //G
 
     }
 
     public void ResumeGame()
     {
         player.Play();
-        musicManager.ResumeMusic();
+        
+        musicManager.ResumeMusic(); //G
     }
 
  
