@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     private bool rewind;
 
     public MusicPlayer musicPlayer;
+    public MusicManager musicManager; // G
 
     [Serializable]
     public class StoryMap
@@ -24,6 +25,7 @@ public class GameManager : MonoBehaviour
         public string sceneToStart;
         public Choice[] choice;
         public bool hasTimer;
+        public AudioClip musicClip; //G 
 
         //Add a subtitle and voiceover variable?
     }
@@ -58,6 +60,11 @@ public class GameManager : MonoBehaviour
         if(!String.IsNullOrEmpty(sequences[sequence].sceneToStart))
         {
             SceneManager.LoadScene(sequences[sequence].sceneToStart);
+        } 
+        if (sequences[sequence].musicClip != null) // G
+        {
+            musicManager.audioSource.clip = sequences[sequence].musicClip;
+            musicManager.audioSource.Play();
         }
 
         
@@ -96,6 +103,8 @@ public class GameManager : MonoBehaviour
         {
             timer.gameObject.SetActive(true);
         }
+
+        musicManager.audioSource.Stop(); // G
 
         NewChoice();
     }
@@ -169,6 +178,5 @@ public class GameManager : MonoBehaviour
     {
         player.Play();
     }
-
     
 }
