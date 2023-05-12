@@ -171,12 +171,16 @@ public class GameManager : MonoBehaviour
    public void PauseGame()
     {
         player.Pause();
+        musicManager.PauseMusic();
 
     }
 
     public void ResumeGame()
     {
         player.Play();
+        musicManager.ResumeMusic();
     }
+
+ 
     
 }
