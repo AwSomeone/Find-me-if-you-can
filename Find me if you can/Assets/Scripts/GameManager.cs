@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     public Timer timer;
     public Image shade;
     public int skipToSequence = 0;
-    public GameObject dialogueBox;
+    public GameObject infoPanel;
     private bool rewind;
 
 
@@ -104,9 +104,9 @@ public class GameManager : MonoBehaviour
 
         if(currentSequence == 5 || currentSequence == 6 || currentSequence == 7 || currentSequence == 10 || currentSequence == 11)
         {
-            if(dialogueBox)
+            if(infoPanel)
             {
-                dialogueBox.SetActive(true);
+                infoPanel.SetActive(true);
             }
         }
 
