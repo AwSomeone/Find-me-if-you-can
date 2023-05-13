@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
         {
             musicManager.audioSource.clip = sequences[sequence].musicClip; // G
             musicManager.audioSource.Play(); // G
+            
+
         }
 
         

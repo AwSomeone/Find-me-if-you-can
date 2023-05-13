@@ -16,7 +16,7 @@ public class MusicManager : MonoBehaviour
         get { return instance; }
     }
 
-   private void Awake()
+    private void Awake()
     {
         if (instance != null && instance != this)
         {
@@ -59,19 +59,34 @@ public class MusicManager : MonoBehaviour
         }
     }
 
-     public void PauseMusic()
+    public void PauseMusic()
     {
-        audioSource.Pause();
+        if (audioSource != null) //C
+        {
+            audioSource.Pause();
+        }
     }
 
     public void ResumeMusic()
     {
-        audioSource.UnPause();
+        if (audioSource != null)  //C
+        {
+            audioSource.UnPause();
+        }
     }
 
-     public void StopMusic()
+    public void StopMusic()
     {
-        audioSource.Stop();
-        audioSource.clip = null;
+        if (audioSource != null) //C
+        {
+            audioSource.Stop();
+        }
+        
+        // audioSource.clip = null;
     }
+
+   /* public void UpdateMusicVolume(float volume)
+    {
+        audioSource.volume = volume;
+    }*/
 }

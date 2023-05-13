@@ -681,6 +681,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 346699323}
     - target: {fileID: 4123326673531140047, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
+      propertyPath: musicManager
+      value: 
+      objectReference: {fileID: 538308086}
+    - target: {fileID: 4123326673531140047, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
       propertyPath: volumeSlider
       value: 
       objectReference: {fileID: 1265806133}
