@@ -57,7 +57,7 @@ VideoPlayer:
   m_TargetAudioSources:
   - {fileID: 0}
   m_DirectAudioVolumes:
-  - 0.20605923
+  - 0.91862714
   m_Url: 
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
@@ -83,6 +83,6 @@ MonoBehaviour:
   timer: {fileID: 0}
   shade: {fileID: 0}
   skipToSequence: 0
-  dialogueBox: {fileID: 0}
+  infoPanel: {fileID: 0}
   musicPlayer: {fileID: 0}
   sequences: []

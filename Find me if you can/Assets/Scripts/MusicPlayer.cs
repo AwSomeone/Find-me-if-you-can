@@ -12,7 +12,6 @@ public class MusicPlayer : MonoBehaviour
 
     public VideoPlayer videoPlayer;
 
-    public MusicManager musicManager;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +25,8 @@ public class MusicPlayer : MonoBehaviour
         musicVolume = PlayerPrefs.GetFloat("volume");
         audioSource.volume = musicVolume;
         volumeSlider.value = musicVolume;
+
+        
         
     }
 
@@ -44,8 +45,31 @@ public class MusicPlayer : MonoBehaviour
     {
        
         musicVolume = volume;
-      //  musicManager.UpdateMusicVolume(volume);
+      
     }
+
+    public void PlayMusicClip(AudioClip clip) // G
+    {
+        audioSource.clip = clip;
+        audioSource.Play();
+    }
+
+    public void PauseMusic() // G
+    {
+        if (audioSource != null)
+        {
+            audioSource.Pause();
+        }
+    }
+
+    public void ResumeMusic() // G 
+    {
+        if (audioSource != null)
+        {
+            audioSource.UnPause();
+        }
+    }
+
 
     
 }

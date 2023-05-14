@@ -15,7 +15,6 @@ public class GameManager : MonoBehaviour
     private bool rewind;
 
     public MusicPlayer musicPlayer;
-    public MusicManager musicManager; // G
 
     [Serializable]
     public class StoryMap
@@ -61,12 +60,10 @@ public class GameManager : MonoBehaviour
         {
             SceneManager.LoadScene(sequences[sequence].sceneToStart);
         } 
-        if (sequences[sequence].musicClip != null) // G
-        {
-            musicManager.audioSource.clip = sequences[sequence].musicClip; // G
-            musicManager.audioSource.Play(); // G
-            
 
+      if (sequences[sequence].musicClip != null) // G
+        {
+            musicPlayer.PlayMusicClip(sequences[sequence].musicClip);
         }
 
         
@@ -106,11 +103,9 @@ public class GameManager : MonoBehaviour
             timer.gameObject.SetActive(true);
         }
 
-       // musicManager.audioSource.Stop(); // G
-
-        if (musicManager != null){
-            
-            musicManager.StopMusic();
+        if (musicPlayer != null) // G
+        {
+            musicPlayer.PlayMusicClip(null); // Stop the music clip!
         }
 
         NewChoice();
@@ -179,7 +174,7 @@ public class GameManager : MonoBehaviour
     {
         player.Pause();
         
-        musicManager.PauseMusic(); //G
+        musicPlayer.PauseMusic(); // G
 
     }
 
@@ -187,7 +182,7 @@ public class GameManager : MonoBehaviour
     {
         player.Play();
         
-        musicManager.ResumeMusic(); //G
+        musicPlayer.ResumeMusic(); // G
     }
 
  
