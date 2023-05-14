@@ -2,20 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InfoButton : MonoBehaviour
+public class NotepadButton : MonoBehaviour
 {
-    public GameObject Panel;
+    public GameObject notepad;
 
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip startClip;
+   
 
-    public void OpenPanel() {
+    public void ShowNotePad() {
 
-        if(Panel != null) {
+        if(notepad != null) {
 
             audioSource.PlayOneShot(startClip);
-            bool isActive = Panel.activeSelf;
-            Panel.SetActive(!isActive);
+            bool isActive = notepad.activeSelf;
+            notepad.SetActive(!isActive);
         }
     }
 }
