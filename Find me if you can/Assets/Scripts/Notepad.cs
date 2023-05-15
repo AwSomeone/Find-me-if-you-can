@@ -10,9 +10,13 @@ public class Notepad : MonoBehaviour
     public GameObject inputField;
     public GameObject textDisplay;
 
+
     public void SaveText()
     {
         textInput = inputField.GetComponent<Text>().text;
         textDisplay.GetComponent<Text>().text = textInput;
     }
+
+
+   
 }

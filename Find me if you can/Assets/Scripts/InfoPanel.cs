@@ -8,32 +8,30 @@ public class InfoPanel : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
+    private int index;
 
     public float minPause = 0.01f;
     public float maxPause = 0.1f;
     public float minPitch = 1f;
     public float maxPitch = 1f;
-    public float startDelay = 0.1f;
     private float pausTime;
     public AudioSource typeSound;
     public bool playSound = true;
 
-    private int index;
- 
-    void OnEnable()
+    public void OnEnable()
     {
         textComponent.text = string.Empty;
         StartText();
     }
 
-    void Update()
+    public void Update()
     {
         if (Input.GetMouseButtonDown(0)) {
             NextLine();
         }
     }
 
-    void StartText() {
+    public void StartText() {
 
         index = 0;
         StartCoroutine(TypeLine());
@@ -55,7 +53,7 @@ public class InfoPanel : MonoBehaviour
         }
     }
 
-    void NextLine() {
+    public void NextLine() {
         if(index < lines.Length - 1) {
             index++;
             textComponent.text = string.Empty;
