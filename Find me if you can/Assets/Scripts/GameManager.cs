@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
         public Choice[] choice;
         public bool hasTimer;
         public AudioClip musicClip; //G 
+        public bool loop;
 
         //Add a subtitle and voiceover variable?
     }
@@ -50,7 +51,6 @@ public class GameManager : MonoBehaviour
         player = GetComponent<VideoPlayer>();
         player.loopPointReached += EndReached;
         StartSequence(skipToSequence);
-
     }
 
     //Starts Video
@@ -66,37 +66,29 @@ public class GameManager : MonoBehaviour
             musicPlayer.PlayMusicClip(sequences[sequence].musicClip);
         }
 
-        
-
         previousSequence = currentSequence;
         currentSequence = sequence;
 
         ToggleButtons(false);
-        //timer.ResetTimer();
 
-        Debug.Log("Changing video");
-        rewind = false;
+
+        if (sequences[currentSequence].loop)
+        {
+            player.isLooping = true;
+        }
         player.clip = sequences[sequence].video;
         player.playbackSpeed = 1f;
         player.Play();
     }
 
-   
-    private void Update()
-    {
-        if (rewind == true)
-        {
-            Debug.Log("REWINDING" + player.frame);
-            player.frame = player.frame + 5; // can get fancy here if you want, this is super basic
-        }
-    }
-
     private void EndReached(VideoPlayer vp)
     {
-        rewind = true;
-        vp.Stop();
-        //Debug.Log("video ENDED");
-        //vp.playbackSpeed *= 0f;
+        player.playbackSpeed = 1f;
+
+        if(!sequences[currentSequence].loop)
+        {
+            vp.Stop();
+        }
 
         if (sequences[currentSequence].hasTimer)
         {
@@ -128,7 +120,6 @@ public class GameManager : MonoBehaviour
 
         foreach (Choice choice in sequences[currentSequence].choice)
         {
-            //Debug.Log("Adding listener" + sequences[currentSequence].choice.Length);
             choice.button?.onClick.AddListener(() => StartSequence(choice.leadsTo));
         }
 
@@ -155,7 +146,6 @@ public class GameManager : MonoBehaviour
 
     public void TimerEnded()
     {
-        Debug.Log("TIMER ENDED");
         timer.gameObject.SetActive(false);
         StartSequence(sequences[currentSequence].choice[0].leadsTo);
     }
