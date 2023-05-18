@@ -130,7 +130,7 @@ public class GameManager : MonoBehaviour
     {
         if(makeVisible)
         {
-            shade.color = new Color(shade.color.r, shade.color.g, shade.color.b, 0.22f);
+            shade.color = new Color(shade.color.r, shade.color.g, shade.color.b, 0.35f);
             for (int i = 0;i <= sequences[currentSequence].choice.Length - 1;i++)
             {
                 sequences[currentSequence].choice[i].button.gameObject.SetActive(true);
