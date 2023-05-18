@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject infoPanel;
     private bool rewind;
 
-    public MusicPlayer musicPlayer;
+    public MusicPlayer musicPlayer; 
 
     [Serializable]
     public class StoryMap
@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
       if (sequences[sequence].musicClip != null) // G
         {
             musicPlayer.PlayMusicClip(sequences[sequence].musicClip);
+       
         }
 
         previousSequence = currentSequence;
@@ -95,10 +96,10 @@ public class GameManager : MonoBehaviour
             timer.gameObject.SetActive(true);
         }
 
-        if (musicPlayer != null) // G
+     /*   if (musicPlayer != null) // G
         {
             musicPlayer.PlayMusicClip(null); // Stop the music clip!
-        }
+        }*/
 
         NewChoice();
     }
