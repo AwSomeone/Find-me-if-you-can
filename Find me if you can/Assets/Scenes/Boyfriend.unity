@@ -2241,7 +2241,7 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[0].musicClip
       value: 
-      objectReference: {fileID: 8300000, guid: e1d7898ec6a2774488e183651b7b9058, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[20].sceneToStart
       value: Meny
