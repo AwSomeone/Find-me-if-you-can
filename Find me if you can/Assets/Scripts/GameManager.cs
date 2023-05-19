@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public int skipToSequence = 0;
     public GameObject infoPanel;
     private bool rewind;
+    private bool loopingStarted; // G
 
     public MusicPlayer musicPlayer; 
 
@@ -26,6 +27,7 @@ public class GameManager : MonoBehaviour
         public bool hasTimer;
         public AudioClip musicClip; //G 
         public bool loop;
+       
 
         //Add a subtitle and voiceover variable?
     }
@@ -61,10 +63,10 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(sequences[sequence].sceneToStart);
         } 
 
-      if (sequences[sequence].musicClip != null) // G
+        
+         if (sequences[sequence].musicClip != null) // G
         {
-            musicPlayer.PlayMusicClip(sequences[sequence].musicClip);
-       
+           musicPlayer.PlayMusicClip(sequences[sequence].musicClip);
         }
 
         previousSequence = currentSequence;
@@ -97,10 +99,16 @@ public class GameManager : MonoBehaviour
             timer.gameObject.SetActive(true);
         }
 
-     /*   if (musicPlayer != null) // G
+        if (sequences[currentSequence].loop)
         {
-            musicPlayer.PlayMusicClip(null); // Stop the music clip!
-        }*/
+            loopingStarted = true; // Set loopingStarted to true when looping starts
+            musicPlayer.StopMusic(0.5f); 
+        }
+
+        if (loopingStarted) // Check if the looping has started, G
+        {
+            ResetLoopingStarted(); 
+        }
 
         NewChoice();
     }
@@ -175,6 +183,11 @@ public class GameManager : MonoBehaviour
         player.Play();
         
         musicPlayer.ResumeMusic(); // G
+    }
+
+    private void ResetLoopingStarted() // G
+    {
+        loopingStarted = false;
     }
 
  

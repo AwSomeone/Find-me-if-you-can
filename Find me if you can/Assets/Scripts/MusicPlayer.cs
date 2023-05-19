@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
+using System.Collections;
 
 public class MusicPlayer : MonoBehaviour
 {
@@ -68,6 +69,26 @@ public class MusicPlayer : MonoBehaviour
         }
     }
 
+    //Stops music and call on the fade out music, so it's no hard cut
+   public void StopMusic(float fadeDuration = 1f) // G
+{
+    StartCoroutine(FadeOutMusic(fadeDuration));
+}
 
+    private IEnumerator FadeOutMusic(float fadeDuration) // G
+{
+    float startVolume = audioSource.volume;
+    float timer = 0f;
+
+    while (timer < fadeDuration)
+    {
+        timer += Time.deltaTime;
+        audioSource.volume = Mathf.Lerp(startVolume, 0f, timer / fadeDuration);
+        yield return null;
+    }
+
+    audioSource.Stop();
+    audioSource.volume = startVolume; // Reset volume to original 
+}
     
 }
