@@ -30,8 +30,6 @@ public class MusicPlayer : MonoBehaviour
         
     }
 
-   
-
     // Update is called once per frame
     void Update()
     {

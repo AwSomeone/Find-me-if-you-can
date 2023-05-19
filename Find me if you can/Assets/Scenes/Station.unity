@@ -474,6 +474,22 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[0].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[2].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[3].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[4].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[0].video
       value: 
       objectReference: {fileID: 32900000, guid: 6986a69a7fc744661a78086aad04816e, type: 3}
@@ -758,19 +774,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.b
-      value: 0.9245283
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.g
-      value: 0.5123829
+      value: 0.7019608
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.r
-      value: 0.25729796
+      value: 0.6901961
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Transition
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Interactable
@@ -942,19 +958,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.b
-      value: 0.9245283
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.g
-      value: 0.5123829
+      value: 0.7019608
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.r
-      value: 0.25729796
+      value: 0.6901961
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Transition
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Interactable
@@ -1459,19 +1475,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.b
-      value: 0.9245283
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.g
-      value: 0.5123829
+      value: 0.7019608
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.r
-      value: 0.25729796
+      value: 0.6901961
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Transition
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Interactable
@@ -1655,19 +1671,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.b
-      value: 0.9245283
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.g
-      value: 0.5123829
+      value: 0.7019608
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.r
-      value: 0.25729796
+      value: 0.6901961
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Transition
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Interactable
@@ -2497,19 +2513,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.b
-      value: 0.9245283
+      value: 0.7058824
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.g
-      value: 0.5123829
+      value: 0.7019608
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397930, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Color.r
-      value: 0.25729796
+      value: 0.6901961
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Transition
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7880631064159397931, guid: 5144a6b4b0e3c7043a0068841cd2d331, type: 3}
       propertyPath: m_Interactable

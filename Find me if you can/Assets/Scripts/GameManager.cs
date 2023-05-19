@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
         ToggleButtons(false);
 
 
+      // loop
         if (sequences[currentSequence].loop)
         {
             player.isLooping = true;
