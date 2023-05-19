@@ -57,7 +57,9 @@ public class GameManager : MonoBehaviour
 
     //Starts Video
     private void StartSequence(int sequence)
+    
     {
+        player.SetDirectAudioMute(0, false); // Y
         if(!String.IsNullOrEmpty(sequences[sequence].sceneToStart))
         {
             SceneManager.LoadScene(sequences[sequence].sceneToStart);
@@ -110,6 +112,7 @@ public class GameManager : MonoBehaviour
             ResetLoopingStarted(); 
         }
 
+        vp.SetDirectAudioMute(0, true); // Y
         NewChoice();
     }
 
