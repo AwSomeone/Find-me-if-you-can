@@ -104,10 +104,10 @@ public class GameManager : MonoBehaviour
         if (sequences[currentSequence].loop)
         {
             loopingStarted = true; // Set loopingStarted to true when looping starts
-            musicPlayer.StopMusic(0.5f); 
+            musicPlayer.StopMusic(3.5f); 
         }
 
-        if (loopingStarted) // Check if the looping has started, G
+        if (loopingStarted) // Check if the looping has started and then reset it with the method, G
         {
             ResetLoopingStarted(); 
         }
