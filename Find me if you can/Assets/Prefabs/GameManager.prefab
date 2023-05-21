@@ -84,5 +84,6 @@ MonoBehaviour:
   shade: {fileID: 0}
   skipToSequence: 0
   infoPanel: {fileID: 0}
+  notepad: {fileID: 0}
   musicPlayer: {fileID: 0}
   sequences: []
