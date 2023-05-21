@@ -887,7 +887,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7127597870747022035, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -350.99997
+      value: -351
       objectReference: {fileID: 0}
     - target: {fileID: 7751308605540397808, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_IsActive
@@ -2134,6 +2134,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 301409483}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: notepad
+      value: 
+      objectReference: {fileID: 1982640507}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: musicPlayer
       value: 
@@ -4681,6 +4685,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1982640507 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4334988687553348397, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+  m_PrefabInstance: {fileID: 301409478}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f57186d78d5485eb53c1f1b355c084, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1983441626 stripped

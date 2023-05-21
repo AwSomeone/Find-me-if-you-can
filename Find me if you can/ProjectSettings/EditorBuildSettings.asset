@@ -23,9 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Title screen.unity
     guid: 44dbedcaf54444741b8ded3753ebf088
-  - enabled: 1
-    path: Assets/Scenes/FirstChoices.unity
-    guid: a990543881fcc474795a1876975bda9c
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/Scenes/SarasWork.unity
     guid: 379ce08b736dc48248ff1ea3b27f0b04

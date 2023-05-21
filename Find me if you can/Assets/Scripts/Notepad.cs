@@ -3,41 +3,62 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
 public class Notepad : MonoBehaviour
 {
     public string textInput;
-    public GameObject inputField;
-    //public GameObject textDisplay;
+    public InputField inputField;
+    public Text textDisplay;
     private string noteKey = "savedText";
+    private bool gameStarted = false;
 
-
-    private void Start()
+    /*public void Start()
     {
-        //återställ vid start
+        // Återställ vid start
         PlayerPrefs.SetString(noteKey, "");
+    }*/
+
+    private void Awake()
+    {
+        LoadTextFromPlayerPrefs();
     }
 
-    public void SaveText()
+    public void StartGame()
     {
-        textInput = inputField.GetComponent<Text>().text;
-        //textDisplay.GetComponent<Text>().text = textInput;
-
-        Debug.Log("Input Field Text: " + textInput); // Kontrollera att texten hämtas korrekt
-        Debug.Log("Input Field Object: " + inputField.name);
-
-        PlayerPrefs.SetString(noteKey, textInput);
-        PlayerPrefs.Save();
+        gameStarted = true;
+        
     }
 
-    private void OnEnable()
+    public void SaveTextToPlayerPrefs()
     {
-        //if (PlayerPrefs.HasKey(noteKey))
-        //{
+        if (gameStarted)
+        {
+            textInput = inputField.text;
+            textDisplay.text = textInput;
+
+            // Kontrollera att texten hämtas korrekt
+            Debug.Log("Input Field Text: " + textInput); 
+            
+
+            PlayerPrefs.SetString(noteKey, textInput);
+            //PlayerPrefs.Save();
+        }
+    }
+
+    public void LoadTextFromPlayerPrefs()
+    {
+        if (PlayerPrefs.HasKey(noteKey) && gameStarted) 
+        {
             textInput = PlayerPrefs.GetString(noteKey);
-            //textDisplay.GetComponent<Text>().text = textInput;
-        //}
+            textDisplay.text = textInput;
+            inputField.text = textInput;
+        }
     }
 
-
+    /*public void OnEndEditText(string newText)
+    {
+        textInput = newText;
+        SaveTextToPlayerPrefs();
+    }*/
 }
+
+

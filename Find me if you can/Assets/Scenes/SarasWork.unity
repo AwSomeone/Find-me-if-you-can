@@ -498,6 +498,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &118622546 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4334988687553348397, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+  m_PrefabInstance: {fileID: 1652750494}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1839795473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f57186d78d5485eb53c1f1b355c084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &146448459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1856,6 +1867,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 1652750497}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: notepad
+      value: 
+      objectReference: {fileID: 118622546}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: infoPanel
       value: 
@@ -3341,11 +3356,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1498728977 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5829826160983144408, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
-  m_PrefabInstance: {fileID: 1652750494}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1645711927
 GameObject:
   m_ObjectHideFlags: 0
@@ -3608,7 +3618,7 @@ PrefabInstance:
     - target: {fileID: 4012505904160274901, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 2023149329}
+      objectReference: {fileID: 118622546}
     - target: {fileID: 4012505904160274901, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -3619,7 +3629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4012505904160274901, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: SaveText
+      value: SaveTextToPlayerPrefs
       objectReference: {fileID: 0}
     - target: {fileID: 4012505904160274901, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
@@ -3809,8 +3819,7 @@ PrefabInstance:
       propertyPath: audioSource
       value: 
       objectReference: {fileID: 1232640224}
-    m_RemovedComponents:
-    - {fileID: 4334988687553348397, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
 --- !u!224 &1652750495 stripped
 RectTransform:
@@ -4725,25 +4734,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &2023149324 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3138873357312772871, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
-  m_PrefabInstance: {fileID: 1652750494}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2023149329
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2023149324}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8f57186d78d5485eb53c1f1b355c084, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textInput: 
-  inputField: {fileID: 1498728977}
 --- !u!1001 &2060092823
 PrefabInstance:
   m_ObjectHideFlags: 0

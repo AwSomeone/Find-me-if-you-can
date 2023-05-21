@@ -1105,6 +1105,17 @@ PrefabInstance:
       objectReference: {fileID: 1359185704}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+--- !u!114 &1498090326 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4334988687553348397, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+  m_PrefabInstance: {fileID: 1498090325}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8f57186d78d5485eb53c1f1b355c084, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1510417340
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1574,10 @@ PrefabInstance:
       propertyPath: timer
       value: 
       objectReference: {fileID: 548423666}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: notepad
+      value: 
+      objectReference: {fileID: 1498090326}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: musicPlayer
       value: 
