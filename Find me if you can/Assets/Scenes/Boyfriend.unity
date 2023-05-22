@@ -4249,7 +4249,7 @@ PrefabInstance:
     - target: {fileID: 4123326673531140047, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
       propertyPath: musicClip
       value: 
-      objectReference: {fileID: 8300000, guid: 97334e7c18f9946449e5ad1d03e470e6, type: 3}
+      objectReference: {fileID: 8300000, guid: c1f544c6f83b348d18d35ab803019669, type: 3}
     - target: {fileID: 4123326673531140047, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
       propertyPath: audioSource
       value: 
