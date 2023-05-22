@@ -15,8 +15,9 @@ public class InfoPanel : MonoBehaviour
     public float minPitch = 1f;
     public float maxPitch = 1f;
     private float pausTime;
-    public AudioSource typeSound;
+    
     public bool playSound = true;
+    public AudioSource typeSound;
 
     public void OnEnable()
     {
@@ -36,7 +37,8 @@ public class InfoPanel : MonoBehaviour
         index = 0;
         StartCoroutine(TypeLine());
     }
-    IEnumerator TypeLine() {
+
+    private IEnumerator TypeLine() {
         foreach (char c in lines[index].ToCharArray()) {
             textComponent.text += c;
          

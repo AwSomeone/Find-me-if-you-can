@@ -11,7 +11,8 @@ public class GameManager : MonoBehaviour
     public Timer timer;
     public Image shade;
     public int skipToSequence = 0;
-    public GameObject infoPanel;
+    public GameObject infoPanel1;
+    public GameObject infoPanel2;
     private bool rewind;
    // private bool loopingStarted; // G
     
@@ -124,12 +125,20 @@ public class GameManager : MonoBehaviour
     {
         timer.ResetTimer();
 
-        if(currentSequence == 5 || currentSequence == 6 || currentSequence == 7 || currentSequence == 10 || currentSequence == 11)
+        if(currentSequence == 5 || currentSequence == 6 || currentSequence == 7)
         {
-            if(infoPanel)
+            if(infoPanel1)
             {
-                infoPanel.SetActive(true);
+                infoPanel1.SetActive(true);
             }
+        }else if(currentSequence == 10 || currentSequence == 11)
+
+        {
+            if (infoPanel2)
+            {
+                infoPanel2.SetActive(true);
+            }
+
         }
 
         ToggleButtons(true);
