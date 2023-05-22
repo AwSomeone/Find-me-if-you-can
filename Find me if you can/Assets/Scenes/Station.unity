@@ -494,6 +494,22 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[5].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[6].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[7].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[8].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[0].video
       value: 
       objectReference: {fileID: 32900000, guid: 6986a69a7fc744661a78086aad04816e, type: 3}
@@ -553,6 +569,22 @@ PrefabInstance:
       propertyPath: sequences.Array.data[4].musicClip
       value: 
       objectReference: {fileID: 8300000, guid: edbe53d1dfcba44bfac8f5feac915396, type: 3}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[5].musicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9326d5be119364d829d3b9a7dd9ed713, type: 3}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[6].musicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f7e4786e345934a2a8c81b8c6259d120, type: 3}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[7].musicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f7e4786e345934a2a8c81b8c6259d120, type: 3}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[8].musicClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 9326d5be119364d829d3b9a7dd9ed713, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[1].sceneToStart
       value: Boyfriend

@@ -13,7 +13,7 @@ public class GameManager : MonoBehaviour
     public int skipToSequence = 0;
     public GameObject infoPanel;
     private bool rewind;
-    private bool loopingStarted; // G
+   // private bool loopingStarted; // G
     public Notepad notepad;
 
     public MusicPlayer musicPlayer; 
@@ -103,6 +103,7 @@ public class GameManager : MonoBehaviour
             timer.gameObject.SetActive(true);
         }
 
+/* 
         if (sequences[currentSequence].loop)
         {
             loopingStarted = true; // Set loopingStarted to true when looping starts
@@ -113,6 +114,7 @@ public class GameManager : MonoBehaviour
         {
             ResetLoopingStarted(); 
         }
+        */
 
         vp.SetDirectAudioMute(0, true); // Y
         NewChoice();
@@ -190,10 +192,12 @@ public class GameManager : MonoBehaviour
         musicPlayer.ResumeMusic(); // G
     }
 
+/*
     private void ResetLoopingStarted() // G
     {
         loopingStarted = false;
     }
+    */
 
  
     

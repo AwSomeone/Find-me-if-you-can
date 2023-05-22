@@ -69,7 +69,7 @@ public class MusicPlayer : MonoBehaviour
         }
     }
 
-    //Stops music and call on the fade out music, so it's no hard cut
+  /*  //Stops music and call on the fade out music, so it's no hard cut
    public void StopMusic(float fadeDuration = 1f) // G
 {
     StartCoroutine(FadeOutMusic(fadeDuration));
@@ -90,5 +90,5 @@ public class MusicPlayer : MonoBehaviour
     audioSource.Stop();
     audioSource.volume = startVolume; // Reset volume to original 
 }
-    
+    */
 }
