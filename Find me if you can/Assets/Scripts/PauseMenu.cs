@@ -27,7 +27,7 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
         Time.timeScale = 1f;
         gm.ResumeGame();
-        audioSource.Play();
+        audioSource.UnPause();
     }
 
     public void MainMenu()
