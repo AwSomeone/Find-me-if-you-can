@@ -167,12 +167,12 @@ public class GameManager : MonoBehaviour
         StartSequence(sequences[currentSequence].choice[0].leadsTo);
     }
 
-    public void SkipToEnd()
+    public void SkipToEnd()//Y
     {
         player.time = player.clip.length;
     }
 
-    public void SpeedUpVideo()
+    public void SpeedUpVideo() //Y
     {
         player.playbackSpeed = 3f; // speed 3x
     }

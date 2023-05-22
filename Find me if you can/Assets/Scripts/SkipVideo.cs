@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-public class SkipVideo : MonoBehaviour, IPointerClickHandler
+public class SkipVideo : MonoBehaviour, IPointerClickHandler //Y
 {
     public GameManager gm;
     private DateTime clickedFirstTime;
