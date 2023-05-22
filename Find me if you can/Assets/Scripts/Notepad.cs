@@ -9,44 +9,25 @@ public class Notepad : MonoBehaviour
     public InputField inputField;
     public Text textDisplay;
     private string noteKey = "savedText";
-    private bool gameStarted = false;
-
-    /*public void Start()
-    {
-        // Återställ vid start
-        PlayerPrefs.SetString(noteKey, "");
-    }*/
+  
 
     private void Awake()
-    {
+    { 
         LoadTextFromPlayerPrefs();
     }
 
-    public void StartGame()
-    {
-        gameStarted = true;
-        
-    }
-
     public void SaveTextToPlayerPrefs()
-    {
-        if (gameStarted)
-        {
-            textInput = inputField.text;
-            textDisplay.text = textInput;
-
-            // Kontrollera att texten hämtas korrekt
-            Debug.Log("Input Field Text: " + textInput); 
+    { 
+        textInput = inputField.text;
+        textDisplay.text = textInput;
             
-
-            PlayerPrefs.SetString(noteKey, textInput);
-            //PlayerPrefs.Save();
-        }
+        PlayerPrefs.SetString(noteKey, textInput);
+        
     }
 
     public void LoadTextFromPlayerPrefs()
     {
-        if (PlayerPrefs.HasKey(noteKey) && gameStarted) 
+        if (PlayerPrefs.HasKey(noteKey)) 
         {
             textInput = PlayerPrefs.GetString(noteKey);
             textDisplay.text = textInput;
@@ -54,11 +35,10 @@ public class Notepad : MonoBehaviour
         }
     }
 
-    /*public void OnEndEditText(string newText)
+    private void OnApplicationQuit()
     {
-        textInput = newText;
-        SaveTextToPlayerPrefs();
-    }*/
+        PlayerPrefs.SetString(noteKey, "");
+    }
 }
 
 

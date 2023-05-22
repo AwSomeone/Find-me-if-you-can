@@ -94,6 +94,8 @@ MonoBehaviour:
   textInput: 
   inputField: {fileID: 7180103164761199202}
   textDisplay: {fileID: 1694006206612565675}
+  gameStarted: 0
+  runOnce: {fileID: 0}
 --- !u!1 &813741460661533114
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
     public GameObject infoPanel;
     private bool rewind;
    // private bool loopingStarted; // G
-    public Notepad notepad;
+    
 
     public MusicPlayer musicPlayer; 
 
@@ -51,7 +51,6 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-        notepad.StartGame();
         player = GetComponent<VideoPlayer>();
         player.loopPointReached += EndReached;
         StartSequence(skipToSequence);

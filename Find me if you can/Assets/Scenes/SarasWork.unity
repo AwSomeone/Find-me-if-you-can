@@ -3539,6 +3539,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 82507102458247473, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 500535548180698768, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -0.9999893
@@ -3667,6 +3671,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 4334988687553348397, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+      propertyPath: runOnce
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4343967464266396026, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_Name
       value: Sequence3
@@ -3694,6 +3702,10 @@ PrefabInstance:
     - target: {fileID: 6429662668601961090, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_Name
       value: Sequence2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6488041105444039237, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 4.2032776
       objectReference: {fileID: 0}
     - target: {fileID: 6781117764273064265, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: gm
