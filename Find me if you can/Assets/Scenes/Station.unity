@@ -568,7 +568,7 @@ PrefabInstance:
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[4].musicClip
       value: 
-      objectReference: {fileID: 8300000, guid: edbe53d1dfcba44bfac8f5feac915396, type: 3}
+      objectReference: {fileID: 8300000, guid: 901256d87f47746d0b64ac2693231dc4, type: 3}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[5].musicClip
       value: 
@@ -724,6 +724,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1497078230990563782, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
+      propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4123326673531140047, guid: ebb21d1c9875c4fb182f7ae260d30f68, type: 3}
       propertyPath: audioSource
       value: 
