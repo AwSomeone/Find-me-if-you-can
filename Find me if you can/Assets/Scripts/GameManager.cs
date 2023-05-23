@@ -59,8 +59,9 @@ public class GameManager : MonoBehaviour
 
     //Starts Video
     private void StartSequence(int sequence)
-    
+        
     {
+        timer.gameObject.SetActive(false);
         player.SetDirectAudioMute(0, false); // Y
         if(!String.IsNullOrEmpty(sequences[sequence].sceneToStart))
         {
@@ -146,6 +147,7 @@ public class GameManager : MonoBehaviour
         foreach (Choice choice in sequences[currentSequence].choice)
         {
             choice.button?.onClick.AddListener(() => StartSequence(choice.leadsTo));
+            
         }
 
     }

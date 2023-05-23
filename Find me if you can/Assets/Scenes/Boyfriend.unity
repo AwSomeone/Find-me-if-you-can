@@ -893,6 +893,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.x
       value: 4.203308
       objectReference: {fileID: 0}
+    - target: {fileID: 6488041105444039237, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -4.6810913
+      objectReference: {fileID: 0}
     - target: {fileID: 6781117764273064265, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: gm
       value: 
@@ -2172,7 +2176,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: skipToSequence
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.size
@@ -2184,7 +2188,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[2].loop
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[3].loop
@@ -2344,7 +2348,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[2].hasTimer
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[4].hasTimer
