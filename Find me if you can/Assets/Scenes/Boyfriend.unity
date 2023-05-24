@@ -2344,11 +2344,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[1].hasTimer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[2].hasTimer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[4].hasTimer
@@ -2356,11 +2356,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[8].hasTimer
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[0].musicClip
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
+      propertyPath: sequences.Array.data[16].hasTimer
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5697643140601592580, guid: ed26a8dfbadcd0948925ac7e9e91e5e6, type: 3}
       propertyPath: sequences.Array.data[7].musicClip
