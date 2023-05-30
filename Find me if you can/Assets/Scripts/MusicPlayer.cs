@@ -8,10 +8,10 @@ public class MusicPlayer : MonoBehaviour
 
     [SerializeField] private AudioSource audioSource;
     [SerializeField] private AudioClip musicClip;
-    public float musicVolume = 1f;
-    public Slider volumeSlider;
+    public float musicVolume = 1f; //C
+    public Slider volumeSlider;  //C
 
-    public VideoPlayer videoPlayer;
+    public VideoPlayer videoPlayer; //C
 
 
     // Start is called before the first frame update
@@ -23,16 +23,16 @@ public class MusicPlayer : MonoBehaviour
         audioSource.loop = true;
         audioSource.Play();
 
-        musicVolume = PlayerPrefs.GetFloat("volume");
-        audioSource.volume = musicVolume;
-        volumeSlider.value = musicVolume;
+        musicVolume = PlayerPrefs.GetFloat("volume");  //C
+        audioSource.volume = musicVolume;  //C
+        volumeSlider.value = musicVolume;  //C
 
         
         
     }
 
     // Update is called once per frame
-    void Update()
+    void Update() //C
     {
         audioSource.volume = musicVolume;
         PlayerPrefs.SetFloat("volume", musicVolume);
@@ -40,7 +40,7 @@ public class MusicPlayer : MonoBehaviour
        
     }
 
-   public void updateVolume(float volume)
+   public void updateVolume(float volume) //C
     {
        
         musicVolume = volume;

@@ -17,7 +17,7 @@ public class GameManager : MonoBehaviour
    // private bool loopingStarted; // G
     
 
-    public MusicPlayer musicPlayer; 
+    public MusicPlayer musicPlayer; //C
 
     [Serializable]
     public class StoryMap
@@ -187,17 +187,17 @@ public class GameManager : MonoBehaviour
         player.playbackSpeed = 3f; // speed 3x
     }
 
-   public void PauseGame()
+   public void PauseGame() //C
     {
-        player.Pause();
+        player.Pause();  //C
         
         musicPlayer.PauseMusic(); // G
 
     }
 
-    public void ResumeGame()
+    public void ResumeGame() //C
     {
-        player.Play();
+        player.Play(); //C
         
         musicPlayer.ResumeMusic(); // G
     }
