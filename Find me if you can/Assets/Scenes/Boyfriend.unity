@@ -857,17 +857,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -1.7999992
       objectReference: {fileID: 0}
-    - target: {fileID: 1193309797661516227, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1193309797661516227, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -24.007706
-      objectReference: {fileID: 0}
     - target: {fileID: 1225910327083018083, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1225910327651396561, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1999317365318713709, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -887,7 +883,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2241016499497152606, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1352.5706
+      value: 1352.5703
+      objectReference: {fileID: 0}
+    - target: {fileID: 2241016499497152606, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -892
       objectReference: {fileID: 0}
     - target: {fileID: 3142914772847905244, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_IsActive
@@ -905,9 +905,9 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 21
       objectReference: {fileID: 0}
-    - target: {fileID: 4574467294666720157, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -229.99998
+    - target: {fileID: 4682845958332028667, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4682845958900406857, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_IsActive
@@ -1131,7 +1131,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7787010356774746412, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9212272903337935945, guid: 7662a75cb59ac6e40834d1d00ee35b08, type: 3}
       propertyPath: gm
